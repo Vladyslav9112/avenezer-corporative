@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
+/* Design tokens */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-main: #4f8c83; /* головний фон */
+  --bg-surface: #ededed; /* другорядний фон/поверхні */
+  --text-main: #222; /* основний текст */
+  --text-muted: #444444; /* другорядний текст */
+  --text-invert: #f2e8e1; /* текст на темному фоні */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Можеш задати базові стилі */
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-invert);
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
 }

@@ -5,14 +5,14 @@ import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 
-const page = PAGES.home;
+const page = PAGES.connectia;
 
 export const metadata: Metadata = {
   title: page.meta.title,
   description: page.meta.description,
 };
 
-export default function Home() {
+export default function ConnectiaPage() {
   return (
     <>
       <PageHero
