@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { User, Mail, MessageSquare, Send } from "lucide-react";
 
 type FormState =
@@ -10,6 +11,7 @@ type FormState =
   | { status: "error"; message: string };
 
 export function ContactForm() {
+  const t = useTranslations("contact.form");
   const [state, setState] = useState<FormState>({ status: "idle" });
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -38,9 +40,10 @@ export function ContactForm() {
         const data = (await response.json().catch(() => null)) as {
           error?: string;
         } | null;
+
         setState({
           status: "error",
-          message: data?.error ?? "Не вдалося надіслати повідомлення.",
+          message: data?.error ?? t("errors.sendFailed"),
         });
         return;
       }
@@ -50,7 +53,7 @@ export function ContactForm() {
     } catch {
       setState({
         status: "error",
-        message: "Сталася помилка з мережею. Спробуйте пізніше.",
+        message: t("errors.network"),
       });
     }
   };
@@ -61,7 +64,7 @@ export function ContactForm() {
         {/* NAME */}
         <label className="space-y-2">
           <span className="text-m font-medium text-[var(--text-main)]">
-            Ім'я
+            {t("fields.name")}
           </span>
           <div className="relative">
             <User className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-black/40" />
@@ -77,7 +80,7 @@ export function ContactForm() {
         {/* EMAIL */}
         <label className="space-y-2">
           <span className="text-m font-medium text-[var(--text-main)]">
-            Email
+            {t("fields.email")}
           </span>
           <div className="relative">
             <Mail className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-black/40" />
@@ -94,7 +97,7 @@ export function ContactForm() {
       {/* MESSAGE */}
       <label className="space-y-2">
         <span className="text-m font-medium text-[var(--text-main)]">
-          Повідомлення
+          {t("fields.message")}
         </span>
         <div className="relative flex gap-2">
           <MessageSquare className="absolute left-3 top-3 h-4 w-4 text-black/40 mr-3" />
@@ -114,7 +117,9 @@ export function ContactForm() {
           className="inline-flex items-center gap-2 rounded-full bg-[var(--text-main)] px-6 py-3 text-sm font-semibold text-[var(--text-invert)] transition hover:opacity-90"
         >
           <Send className="h-4 w-4" />
-          {state.status === "sending" ? "Надсилаємо..." : "Надіслати"}
+          {state.status === "sending"
+            ? t("buttons.sending")
+            : t("buttons.send")}
         </button>
 
         <p
@@ -123,7 +128,7 @@ export function ContactForm() {
           aria-live="polite"
         >
           {state.status === "success"
-            ? "Дякуємо! Повідомлення відправлено."
+            ? t("messages.success")
             : state.status === "error"
               ? state.message
               : ""}

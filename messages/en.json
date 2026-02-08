@@ -1,0 +1,243 @@
+{
+  "layout": {
+    "title": "AvenEzer",
+    "description": "AvenEzer is an international digital platform."
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "platform": "Platform",
+    "avers": "Avers",
+    "connectia": "Connectia",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+
+  "home": {
+    "meta": {
+      "title": "AvenEzer — Home",
+      "description": "AvenEzer is an international digital platform for showcasing businesses, services and professional offerings, helping users navigate across cities and countries."
+    },
+    "hero": {
+      "eyebrow": "HOME",
+      "title": "AvenEzer",
+      "subtitle": "AvenEzer is an international digital platform created to showcase businesses, services and professional offerings, and to help users navigate across different cities and countries.\n\nThe platform brings together technology, a structured ecosystem and a community of contributors who take part in its development."
+    },
+    "sections": {
+      "platformToday": {
+        "title": "The platform today",
+        "paragraphs": [
+          "At the moment, AvenEzer operates as an MVP web platform.",
+          "The MVP allows you to:"
+        ],
+        "bullets": [
+          "create and view business profiles,",
+          "explore the platform’s functionality,",
+          "join the ecosystem at an early stage,",
+          "test approaches and shape the future product structure."
+        ]
+      },
+      "mvpNote": {
+        "title": "Note about the MVP",
+        "paragraphs": [
+          "The MVP is an initial version of the platform and may change as the product evolves."
+        ]
+      },
+      "nextStage": {
+        "title": "Next stage",
+        "paragraphs": [
+          "The next stage of AvenEzer’s development is a mobile app that expands access and makes the experience more convenient for businesses and users.",
+          "The mobile app is in planning and development. Features and launch timelines are defined gradually."
+        ]
+      },
+      "forWhom": {
+        "title": "Who the platform is for",
+        "business": {
+          "title": "For businesses",
+          "bullets": [
+            "digital presence and visibility,",
+            "showcasing services and companies,",
+            "structured presentation of information,",
+            "access to a new audience."
+          ]
+        },
+        "users": {
+          "title": "For users",
+          "bullets": [
+            "finding businesses and services,",
+            "navigation by categories and locations,",
+            "quick access to up-to-date information."
+          ]
+        }
+      }
+    }
+  },
+
+  "about": {
+    "meta": {
+      "title": "AvenEzer — About",
+      "description": "About AvenEzer, our mission and our approach to building an international digital ecosystem."
+    },
+    "hero": {
+      "eyebrow": "ABOUT",
+      "title": "About the company",
+      "subtitle": "AvenEzer is an independent platform evolving as an international digital ecosystem."
+    },
+    "sections": {
+      "aboutCompany": {
+        "title": "About the company",
+        "paragraphs": [
+          "We are building a technology environment that connects businesses, users and independent participants within a single structure with clear rules of interaction."
+        ]
+      },
+      "mission": {
+        "title": "AvenEzer mission",
+        "paragraphs": [
+          "Our mission is to create a modern digital platform that simplifies interactions between businesses and users and sets a new standard for online navigation and presence."
+        ]
+      },
+      "approach": {
+        "title": "Development approach",
+        "paragraphs": ["AvenEzer evolves step by step, focusing on:"],
+        "bullets": [
+          "a stable architecture,",
+          "clear user logic,",
+          "scalability,",
+          "long-term value for participants."
+        ]
+      }
+    }
+  },
+
+  "avers": {
+    "meta": {
+      "title": "AvenEzer — Avers",
+      "description": "Who Avers are, their role in the AvenEzer ecosystem, and the AvenEzer School as an internal training program."
+    },
+    "hero": {
+      "eyebrow": "AVERS",
+      "title": "Who are Avers",
+      "subtitle": "An Aver is an independent participant in the AvenEzer ecosystem who contributes to platform development, helps businesses and users navigate the system, and works with platform tools."
+    },
+    "sections": {
+      "role": {
+        "title": "Role of Avers",
+        "paragraphs": [
+          "Avers operate independently and interact with the platform according to internal rules and participation conditions."
+        ]
+      },
+      "school": {
+        "title": "AvenEzer School",
+        "paragraphs": [
+          "AvenEzer School is an internal training school for Avers."
+        ],
+        "bulletsTitle": "The school is designed to",
+        "bullets": [
+          "prepare Avers to work with the platform,",
+          "explain the structure and rules of the ecosystem,",
+          "establish communication and interaction standards."
+        ]
+      },
+      "note": {
+        "title": "Training format",
+        "paragraphs": [
+          "The training format and program content are defined by the company and may change."
+        ]
+      }
+    }
+  },
+
+  "connectia": {
+    "meta": {
+      "title": "AvenEzer — Connectia Business Club",
+      "description": "Connectia Business Club is a business community within the AvenEzer ecosystem for professional networking and building business relationships."
+    },
+    "hero": {
+      "eyebrow": "CONNECTIA BUSINESS CLUB",
+      "title": "Connectia Business Club",
+      "subtitle": "Connectia Business Club is a business community within the AvenEzer ecosystem, created for professional communication, knowledge exchange, and building business relationships."
+    },
+    "sections": {
+      "part": {
+        "title": "Part of the ecosystem",
+        "paragraphs": [
+          "The club is part of the AvenEzer ecosystem and is developing as a separate direction."
+        ]
+      }
+    }
+  },
+
+  "contact": {
+    "form": {
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "buttons": {
+        "send": "Send",
+        "sending": "Sending..."
+      },
+      "messages": {
+        "success": "Thank you! Your message has been sent."
+      },
+      "errors": {
+        "sendFailed": "Failed to send the message.",
+        "network": "Network error. Please try again later."
+      }
+    },
+    "meta": {
+      "title": "AvenEzer — Contact",
+      "description": "AvenEzer contact information for general inquiries and partnership requests."
+    },
+    "hero": {
+      "eyebrow": "CONTACT",
+      "title": "Contact information",
+      "subtitle": "General inquiries, partnership requests and questions about the platform:"
+    },
+    "sections": {
+      "details": {
+        "title": "Contact",
+        "bullets": ["Email: info@avenezer.ink", "Website: www.avenezer.ink"]
+      },
+      "form": {
+        "title": "Contact form",
+        "subtitle": "Leave a message and we will get back to you by email."
+      }
+    }
+  },
+  "platform": {
+    "meta": {
+      "title": "AvenEzer — MVP platform",
+      "description": "Overview of the AvenEzer MVP web platform: purpose, testing, structure, and usage rules."
+    },
+    "hero": {
+      "eyebrow": "PLATFORM / MVP",
+      "title": "AvenEzer MVP web platform",
+      "subtitle": "The MVP is the first working version of the AvenEzer platform. It is used to test functionality, shape the platform structure, collect feedback, and prepare for the next stages of development."
+    },
+    "sections": {
+      "purpose": {
+        "title": "MVP purpose",
+        "paragraphs": [
+          "The MVP functionality may change or be expanded over time."
+        ]
+      },
+      "how": {
+        "title": "How to use the platform",
+        "paragraphs": [
+          "The platform is available for businesses and users who want to:"
+        ],
+        "bullets": [
+          "explore AvenEzer’s capabilities,",
+          "create a profile (when the relevant functionality is available),",
+          "use the platform according to the established rules."
+        ]
+      }
+    }
+  },
+  "footer": {
+    "tagline": "A digital platform for businesses and users"
+  }
+}
