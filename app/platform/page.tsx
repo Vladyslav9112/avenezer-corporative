@@ -1,36 +1,67 @@
 import type { Metadata } from "next";
-import { PAGES } from "@/content/siteContent";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 
-const page = PAGES.platform;
+import { Rocket, MousePointerClick } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: page.meta.title,
-  description: page.meta.description,
+  title: "AvenEzer — MVP платформа",
+  description:
+    "Опис MVP веб-платформи AvenEzer: призначення, тестування, структура та правила користування.",
 };
 
 export default function PlatformPage() {
   return (
     <>
       <PageHero
-        eyebrow={page.hero.eyebrow}
-        title={page.hero.title}
-        subtitle={page.hero.subtitle}
+        eyebrow="PLATFORM / MVP ПЛАТФОРМА"
+        title="MVP веб-платформа AvenEzer"
+        subtitle="MVP — це перша робоча версія платформи AvenEzer, яка використовується для тестування функціоналу, формування структури платформи, збору зворотного звʼязку та підготовки до наступних етапів розвитку."
       />
-      {page.sections.map((section) => (
-        <Section
-          key={section.id}
-          id={section.id}
-          title={section.title}
-          subtitle={section.subtitle}
-        >
-          <InfoBlock paragraphs={section.paragraphs} />
-          <Bullets blocks={section.bulletBlocks} />
-        </Section>
-      ))}
+
+      <Section
+        id="mvp-purpose"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <Rocket className="h-5 w-5 text-[#2A5D59]" />
+            Призначення MVP
+          </span>
+        }
+      >
+        <InfoBlock
+          paragraphs={["Функціонал MVP може змінюватися або доповнюватися."]}
+        />
+        <Bullets blocks={[]} />
+      </Section>
+
+      <Section
+        id="how-to-use"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <MousePointerClick className="h-5 w-5 text-[#2A5D59]" />
+            Як користуватися платформою
+          </span>
+        }
+      >
+        <InfoBlock
+          paragraphs={[
+            "Платформа доступна для бізнесів i користувачів, які бажають:",
+          ]}
+        />
+        <Bullets
+          blocks={[
+            {
+              bullets: [
+                "ознайомитися з можливостями AvenEzer,",
+                "створити профіль (за наявності відповідного функціоналу),",
+                "користуватися платформою відповідно до встановлених правил.",
+              ],
+            },
+          ]}
+        />
+      </Section>
     </>
   );
 }

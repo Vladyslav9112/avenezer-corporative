@@ -46,7 +46,7 @@ export function Header() {
             href="/"
             className="text-lg font-[var(--font-display)] uppercase tracking-[0.2em] text-[var(--text-invert)]"
           >
-            {SITE.brand}
+            <img src="/logo.webp" alt="Logo" className="w-[92px] h-14" />
           </Link>
 
           <nav className="hidden items-center gap-3 md:flex">

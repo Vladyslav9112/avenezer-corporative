@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 
 type SectionProps = {
   id?: string;
-  title: string;
+  title: ReactNode; // ✅ було string
   subtitle?: string;
   children?: ReactNode;
 };
@@ -17,12 +17,14 @@ export function Section({ id, title, subtitle, children }: SectionProps) {
             <h2 className="text-2xl font-[var(--font-display)] text-[var(--text-main)] sm:text-3xl">
               {title}
             </h2>
+
             {subtitle ? (
               <p className="mt-2 text-base text-[var(--text-muted)]">
                 {subtitle}
               </p>
             ) : null}
           </div>
+
           <div className="space-y-6">{children}</div>
         </div>
       </Container>
