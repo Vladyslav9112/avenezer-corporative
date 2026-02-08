@@ -53,7 +53,7 @@ export default async function ContactPage({
         id="contact-details"
         title={
           <span className="inline-flex items-center gap-2">
-            <Mail className="h-5 w-5 text-[#2A5D59]" />
+            <Mail className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.details.title")}
           </span>
         }
@@ -72,7 +72,7 @@ export default async function ContactPage({
         id="contact-form"
         title={
           <span className="inline-flex items-center gap-2">
-            <MessageSquare className="h-5 w-5 text-[#2A5D59]" />
+            <MessageSquare className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.form.title")}
           </span>
         }

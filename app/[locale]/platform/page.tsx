@@ -54,7 +54,7 @@ export default async function PlatformPage({
         id="mvp-purpose"
         title={
           <span className="inline-flex items-center gap-2">
-            <Rocket className="h-5 w-5 text-[#2A5D59]" />
+            <Rocket className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.purpose.title")}
           </span>
         }
@@ -67,7 +67,7 @@ export default async function PlatformPage({
         id="how-to-use"
         title={
           <span className="inline-flex items-center gap-2">
-            <MousePointerClick className="h-5 w-5 text-[#2A5D59]" />
+            <MousePointerClick className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.how.title")}
           </span>
         }

@@ -56,7 +56,7 @@ export default async function AversPage({
         id="avers-role"
         title={
           <span className="inline-flex items-center gap-2">
-            <Users className="h-5 w-5 text-[#2A5D59]" />
+            <Users className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.role.title")}
           </span>
         }
@@ -69,7 +69,7 @@ export default async function AversPage({
         id="school"
         title={
           <span className="inline-flex items-center gap-2">
-            <GraduationCap className="h-5 w-5 text-[#2A5D59]" />
+            <GraduationCap className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.school.title")}
           </span>
         }
@@ -89,7 +89,7 @@ export default async function AversPage({
         id="school-note"
         title={
           <span className="inline-flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-[#2A5D59]" />
+            <ShieldCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.note.title")}
           </span>
         }

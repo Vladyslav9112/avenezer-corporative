@@ -52,7 +52,7 @@ export default async function ConnectiaPage({
         id="connectia-part"
         title={
           <span className="inline-flex items-center gap-2">
-            <UsersRound className="h-5 w-5 text-[#2A5D59]" />
+            <UsersRound className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.part.title")}
           </span>
         }

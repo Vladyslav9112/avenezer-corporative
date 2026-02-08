@@ -70,7 +70,7 @@ export default async function Home({
         id="platform-today"
         title={
           <span className="inline-flex items-center gap-2">
-            <LayoutDashboard className="h-5 w-5 text-[#2A5D59]" />
+            <LayoutDashboard className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.platformToday.title")}
           </span>
         }
@@ -83,7 +83,7 @@ export default async function Home({
         id="mvp-note"
         title={
           <span className="inline-flex items-center gap-2">
-            <Info className="h-5 w-5 text-[#2A5D59]" />
+            <Info className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.mvpNote.title")}
           </span>
         }
@@ -96,7 +96,7 @@ export default async function Home({
         id="next-stage"
         title={
           <span className="inline-flex items-center gap-2">
-            <Smartphone className="h-5 w-5 text-[#2A5D59]" />
+            <Smartphone className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.nextStage.title")}
           </span>
         }
@@ -109,7 +109,7 @@ export default async function Home({
         id="for-whom"
         title={
           <span className="inline-flex items-center gap-2">
-            <Users className="h-5 w-5 text-[#2A5D59]" />
+            <Users className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.forWhom.title")}
           </span>
         }

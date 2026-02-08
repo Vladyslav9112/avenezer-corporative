@@ -57,7 +57,7 @@ export default async function AboutPage({
         id="about-company"
         title={
           <span className="inline-flex items-center gap-2">
-            <Building2 className="h-5 w-5 text-[#2A5D59]" />
+            <Building2 className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.aboutCompany.title")}
           </span>
         }
@@ -70,7 +70,7 @@ export default async function AboutPage({
         id="mission"
         title={
           <span className="inline-flex items-center gap-2">
-            <Target className="h-5 w-5 text-[#2A5D59]" />
+            <Target className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.mission.title")}
           </span>
         }
@@ -83,7 +83,7 @@ export default async function AboutPage({
         id="approach"
         title={
           <span className="inline-flex items-center gap-2">
-            <Layers3 className="h-5 w-5 text-[#2A5D59]" />
+            <Layers3 className="h-7.5 w-7.5 text-[#2A5D59]" />
             {t("sections.approach.title")}
           </span>
         }
