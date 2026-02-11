@@ -138,28 +138,28 @@ export default async function Home({
         }
       >
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
             <h3 className="mb-2 text-lg font-semibold text-[#222]">
               {t("sections.forWhom.business.title")}
             </h3>
             <InfoBlock paragraphs={forWhomBusinessParagraphs} />
           </div>
 
-          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
             <h3 className="mb-2 text-lg font-semibold text-[#222]">
               {t("sections.forWhom.avers.title")}
             </h3>
             <InfoBlock paragraphs={forWhomAversParagraphs} />
           </div>
 
-          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
             <h3 className="mb-2 text-lg font-semibold text-[#222]">
               {t("sections.forWhom.users.title")}
             </h3>
             <InfoBlock paragraphs={forWhomUsersParagraphs} />
           </div>
 
-          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
             <h3 className="mb-2 text-lg font-semibold text-[#222]">
               {t("sections.forWhom.nonprofit.title")}
             </h3>
