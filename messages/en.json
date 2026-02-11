@@ -18,12 +18,12 @@
   "home": {
     "meta": {
       "title": "AvenEzer — Home",
-      "description": "AvenEzer is an international digital platform for showcasing businesses, services and professional offerings, helping users navigate across cities and countries."
+      "description": "AvenEzer is an international digital platform for businesses, Avers and communities."
     },
     "hero": {
       "eyebrow": "HOME",
-      "title": "AvenEzer",
-      "subtitle": "AvenEzer is an international digital platform created to showcase businesses, services and professional offerings, and to help users navigate across different cities and countries.\n\nThe platform brings together technology, a structured ecosystem and a community of contributors who take part in its development."
+      "title": "AvenEzer — an international digital platform for businesses, Avers and communities",
+      "subtitle": "We unite local businesses, Aver partners and users into one ecosystem —\nwith a mobile app, a business catalog, and opportunities for growth and income."
     },
     "sections": {
       "platformToday": {
@@ -56,82 +56,122 @@
         "title": "Who the platform is for",
         "business": {
           "title": "For businesses",
-          "bullets": [
-            "digital presence and visibility,",
-            "showcasing services and companies,",
-            "structured presentation of information,",
-            "access to a new audience."
+          "paragraphs": [
+            "AvenEzer helps local and international businesses become visible,",
+            "attract customers, and prepare for a full presence in the mobile app."
+          ]
+        },
+        "avers": {
+          "title": "For Avers (platform partners)",
+          "paragraphs": [
+            "An Aver is an AvenEzer partner who brings businesses into the platform and the mobile app,",
+            "helps the ecosystem grow, and receives a reward for their contribution.",
+            "Avers are a key link between the platform and businesses in cities and countries."
           ]
         },
         "users": {
           "title": "For users",
-          "bullets": [
-            "finding businesses and services,",
-            "navigation by categories and locations,",
-            "quick access to up-to-date information."
+          "paragraphs": [
+            "Users get convenient access to verified businesses, services and offers",
+            "within the platform and the future mobile app."
+          ]
+        },
+        "nonprofit": {
+          "title": "For nonprofits and social initiatives",
+          "paragraphs": [
+            "In the future, AvenEzer plans to support nonprofit organizations and social projects,",
+            "giving them visibility, access to the community, and a place in a global ecosystem of trust."
           ]
         }
+      },
+      "ecosystem": {
+        "title": "The AvenEzer ecosystem",
+        "paragraphs": [
+          "AvenEzer is an ecosystem where businesses gain visibility,",
+          "Avers get opportunities for growth and income,",
+          "users get convenient access to services,",
+          "and nonprofits gain a space for support and collaboration."
+        ]
+      },
+      "developmentNote": {
+        "title": "Note",
+        "paragraphs": [
+          "Some platform features are under development and will be available in future versions."
+        ]
       }
     }
   },
-
   "about": {
     "meta": {
       "title": "AvenEzer — About",
-      "description": "About AvenEzer, our mission and our approach to building an international digital ecosystem."
+      "description": "About AvenEzer: mission, development approach, and the principles behind building an international digital ecosystem."
     },
     "hero": {
       "eyebrow": "ABOUT",
       "title": "About the company",
-      "subtitle": "AvenEzer is an independent platform evolving as an international digital ecosystem."
+      "subtitle": "AvenEzer is evolving as an international digital ecosystem that connects businesses, Aver partners and users within a single structure — with a focus on trust, clear rules, and gradual development."
     },
     "sections": {
       "aboutCompany": {
         "title": "About the company",
         "paragraphs": [
-          "We are building a technology environment that connects businesses, users and independent participants within a single structure with clear rules of interaction."
+          "We are building a technology environment where businesses gain visibility and a digital presence,",
+          "Avers help the ecosystem grow as independent partners,",
+          "and users get access to services and offers within the platform and the future mobile app."
         ]
       },
       "mission": {
         "title": "AvenEzer mission",
         "paragraphs": [
-          "Our mission is to create a modern digital platform that simplifies interactions between businesses and users and sets a new standard for online navigation and presence."
+          "Our mission is to build a modern platform that simplifies interactions between businesses and users,",
+          "and creates the foundation for a global ecosystem of trust and collaboration."
         ]
       },
       "approach": {
         "title": "Development approach",
-        "paragraphs": ["AvenEzer evolves step by step, focusing on:"],
+        "paragraphs": [
+          "AvenEzer evolves step by step. We focus on building a strong foundation rather than making loud promises."
+        ],
         "bullets": [
-          "a stable architecture,",
-          "clear user logic,",
-          "scalability,",
-          "long-term value for participants."
+          "stable architecture and clear user logic,",
+          "defined roles and transparent rules within the ecosystem,",
+          "scalability across cities, countries and communities,",
+          "long-term value for platform participants."
         ]
       }
     }
   },
-
   "avers": {
     "meta": {
       "title": "AvenEzer — Avers",
-      "description": "Who Avers are, their role in the AvenEzer ecosystem, and the AvenEzer School as an internal training program."
+      "description": "Who Avers are, how they contribute to the AvenEzer ecosystem, and their role in connecting businesses to the platform."
     },
     "hero": {
       "eyebrow": "AVERS",
       "title": "Who are Avers",
-      "subtitle": "An Aver is an independent participant in the AvenEzer ecosystem who contributes to platform development, helps businesses and users navigate the system, and works with platform tools."
+      "subtitle": "An Aver is an independent partner of the AvenEzer platform who helps businesses join the ecosystem, develops the network, and receives a reward for their contribution."
     },
     "sections": {
-      "role": {
-        "title": "Role of Avers",
+      "who": {
+        "title": "Who are Avers",
         "paragraphs": [
-          "Avers operate independently and interact with the platform according to internal rules and participation conditions."
+          "An Aver is an independent partner of the AvenEzer platform who helps businesses connect to the ecosystem,",
+          "develops the network and receives compensation for their contribution.",
+          "Avers act as a key link between the platform and businesses across cities and countries."
+        ]
+      },
+      "clarity": {
+        "title": "Clear positioning",
+        "bullets": [
+          "An Aver is not an employee",
+          "An Aver is not a sales agent",
+          "An Aver is a partner of the ecosystem"
         ]
       },
       "school": {
         "title": "AvenEzer School",
         "paragraphs": [
-          "AvenEzer School is an internal training school for Avers."
+          "AvenEzer School is an internal training program designed to support Avers in working effectively within the ecosystem."
         ],
         "bulletsTitle": "The school is designed to",
         "bullets": [
@@ -141,14 +181,13 @@
         ]
       },
       "note": {
-        "title": "Training format",
+        "title": "Note",
         "paragraphs": [
-          "The training format and program content are defined by the company and may change."
+          "Training formats and program content are defined by the company and may evolve over time."
         ]
       }
     }
   },
-
   "connectia": {
     "meta": {
       "title": "AvenEzer — Connectia Business Club",
@@ -211,29 +250,36 @@
   "platform": {
     "meta": {
       "title": "AvenEzer — MVP platform",
-      "description": "Overview of the AvenEzer MVP web platform: purpose, testing, structure, and usage rules."
+      "description": "Overview of the AvenEzer MVP web platform: what is available now, how to use it, and how the platform will evolve."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP",
       "title": "AvenEzer MVP web platform",
-      "subtitle": "The MVP is the first working version of the AvenEzer platform. It is used to test functionality, shape the platform structure, collect feedback, and prepare for the next stages of development."
+      "subtitle": "The MVP is the first working version of AvenEzer. It is built to test the approach, structure, and interactions within the ecosystem — without overpromising and with a focus on gradual development."
     },
     "sections": {
       "purpose": {
         "title": "MVP purpose",
         "paragraphs": [
-          "The MVP functionality may change or be expanded over time."
+          "The MVP helps establish the foundation of the platform: structure, user logic, and rules of interaction between participants.",
+          "MVP functionality may change or be expanded as the platform evolves."
         ]
       },
       "how": {
         "title": "How to use the platform",
         "paragraphs": [
-          "The platform is available for businesses and users who want to:"
+          "The platform is available for businesses and users who want to explore AvenEzer and join at an early stage."
         ],
         "bullets": [
-          "explore AvenEzer’s capabilities,",
-          "create a profile (when the relevant functionality is available),",
-          "use the platform according to the established rules."
+          "browse business profiles and the basic catalog structure,",
+          "explore the platform’s capabilities,",
+          "use the available functionality according to the established rules."
+        ]
+      },
+      "note": {
+        "title": "Note",
+        "paragraphs": [
+          "Some platform features are under development and will be available in future versions."
         ]
       }
     }

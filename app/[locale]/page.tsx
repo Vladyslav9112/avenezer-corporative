@@ -6,7 +6,14 @@ import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 
-import { LayoutDashboard, Info, Smartphone, Users } from "lucide-react";
+import {
+  LayoutDashboard,
+  Info,
+  Smartphone,
+  Users,
+  Network,
+  BadgeInfo,
+} from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -51,11 +58,28 @@ export default async function Home({
     "sections.nextStage.paragraphs",
   ) as string[];
 
-  const forWhomBusinessBullets = t.raw(
-    "sections.forWhom.business.bullets",
+  // ✅ For whom (now as paragraphs, not bullet lists)
+  const forWhomBusinessParagraphs = t.raw(
+    "sections.forWhom.business.paragraphs",
   ) as string[];
-  const forWhomUsersBullets = t.raw(
-    "sections.forWhom.users.bullets",
+  const forWhomAversParagraphs = t.raw(
+    "sections.forWhom.avers.paragraphs",
+  ) as string[];
+  const forWhomUsersParagraphs = t.raw(
+    "sections.forWhom.users.paragraphs",
+  ) as string[];
+  const forWhomNonprofitParagraphs = t.raw(
+    "sections.forWhom.nonprofit.paragraphs",
+  ) as string[];
+
+  // ✅ Ecosystem short block
+  const ecosystemParagraphs = t.raw(
+    "sections.ecosystem.paragraphs",
+  ) as string[];
+
+  // ✅ Small honest note
+  const developmentNoteParagraphs = t.raw(
+    "sections.developmentNote.paragraphs",
   ) as string[];
 
   return (
@@ -89,7 +113,6 @@ export default async function Home({
         }
       >
         <InfoBlock paragraphs={mvpNoteParagraphs} />
-        <Bullets blocks={[]} />
       </Section>
 
       <Section
@@ -102,9 +125,9 @@ export default async function Home({
         }
       >
         <InfoBlock paragraphs={nextStageParagraphs} />
-        <Bullets blocks={[]} />
       </Section>
 
+      {/* ✅ For whom (critical block) */}
       <Section
         id="for-whom"
         title={
@@ -114,19 +137,61 @@ export default async function Home({
           </span>
         }
       >
-        <InfoBlock paragraphs={[]} />
-        <Bullets
-          blocks={[
-            {
-              title: t("sections.forWhom.business.title"),
-              bullets: forWhomBusinessBullets,
-            },
-            {
-              title: t("sections.forWhom.users.title"),
-              bullets: forWhomUsersBullets,
-            },
-          ]}
-        />
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+            <h3 className="mb-2 text-lg font-semibold text-[#222]">
+              {t("sections.forWhom.business.title")}
+            </h3>
+            <InfoBlock paragraphs={forWhomBusinessParagraphs} />
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+            <h3 className="mb-2 text-lg font-semibold text-[#222]">
+              {t("sections.forWhom.avers.title")}
+            </h3>
+            <InfoBlock paragraphs={forWhomAversParagraphs} />
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+            <h3 className="mb-2 text-lg font-semibold text-[#222]">
+              {t("sections.forWhom.users.title")}
+            </h3>
+            <InfoBlock paragraphs={forWhomUsersParagraphs} />
+          </div>
+
+          <div className="rounded-2xl border border-black/10 bg-[#f2e8e1] p-5">
+            <h3 className="mb-2 text-lg font-semibold text-[#222]">
+              {t("sections.forWhom.nonprofit.title")}
+            </h3>
+            <InfoBlock paragraphs={forWhomNonprofitParagraphs} />
+          </div>
+        </div>
+      </Section>
+
+      {/* ✅ Ecosystem short picture */}
+      <Section
+        id="ecosystem"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <Network className="h-7.5 w-7.5 text-[#2A5D59]" />
+            {t("sections.ecosystem.title")}
+          </span>
+        }
+      >
+        <InfoBlock paragraphs={ecosystemParagraphs} />
+      </Section>
+
+      {/* ✅ Small strategic note */}
+      <Section
+        id="development-note"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <BadgeInfo className="h-7.5 w-7.5 text-[#2A5D59]" />
+            {t("sections.developmentNote.title")}
+          </span>
+        }
+      >
+        <InfoBlock paragraphs={developmentNoteParagraphs} />
       </Section>
     </>
   );

@@ -6,7 +6,7 @@ import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 
-import { Rocket, MousePointerClick } from "lucide-react";
+import { Rocket, MousePointerClick, ShieldCheck } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -42,6 +42,8 @@ export default async function PlatformPage({
   const howParagraphs = t.raw("sections.how.paragraphs") as string[];
   const howBullets = t.raw("sections.how.bullets") as string[];
 
+  const noteParagraphs = t.raw("sections.note.paragraphs") as string[];
+
   return (
     <>
       <PageHero
@@ -60,7 +62,6 @@ export default async function PlatformPage({
         }
       >
         <InfoBlock paragraphs={purposeParagraphs} />
-        <Bullets blocks={[]} />
       </Section>
 
       <Section
@@ -74,6 +75,19 @@ export default async function PlatformPage({
       >
         <InfoBlock paragraphs={howParagraphs} />
         <Bullets blocks={[{ bullets: howBullets }]} />
+      </Section>
+
+      {/* ✅ Honest note (no overpromises) */}
+      <Section
+        id="platform-note"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <ShieldCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
+            {t("sections.note.title")}
+          </span>
+        }
+      >
+        <InfoBlock paragraphs={noteParagraphs} />
       </Section>
     </>
   );

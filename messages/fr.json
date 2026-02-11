@@ -18,12 +18,12 @@
   "home": {
     "meta": {
       "title": "AvenEzer — Accueil",
-      "description": "AvenEzer est une plateforme numérique internationale dédiée à la mise en avant des entreprises, des services et des prestations professionnelles, avec une navigation pratique par villes et pays."
+      "description": "AvenEzer est une plateforme numérique internationale pour les entreprises, les Avers et les communautés."
     },
     "hero": {
       "eyebrow": "ACCUEIL",
-      "title": "AvenEzer",
-      "subtitle": "AvenEzer est une plateforme numérique internationale conçue pour présenter des entreprises, des services et des prestations professionnelles, ainsi que pour aider les utilisateurs à naviguer dans différentes villes et différents pays.\n\nLa plateforme réunit la technologie, un écosystème structuré et une communauté de participants qui contribuent à son développement."
+      "title": "AvenEzer — une plateforme numérique internationale pour les entreprises, les Avers et les communautés",
+      "subtitle": "Nous réunissons des entreprises locales, des partenaires Aver et des utilisateurs dans un seul écosystème —\navec une application mobile, un annuaire d’entreprises et des opportunités de développement et de revenus."
     },
     "sections": {
       "platformToday": {
@@ -56,21 +56,48 @@
         "title": "À qui s’adresse la plateforme",
         "business": {
           "title": "Pour les entreprises",
-          "bullets": [
-            "présence numérique et visibilité,",
-            "présentation des services et des entreprises,",
-            "présentation structurée des informations,",
-            "accès à un nouveau public."
+          "paragraphs": [
+            "AvenEzer aide les entreprises locales et internationales à gagner en visibilité,",
+            "à attirer des clients et à se préparer à une présence complète dans l’application mobile."
+          ]
+        },
+        "avers": {
+          "title": "Pour les Avers (partenaires de la plateforme)",
+          "paragraphs": [
+            "Un Aver est un partenaire d’AvenEzer qui intègre des entreprises à la plateforme et à l’application mobile,",
+            "aide l’écosystème à grandir et reçoit une récompense pour sa participation.",
+            "Les Avers sont un maillon clé entre la plateforme et les entreprises dans les villes et les pays."
           ]
         },
         "users": {
           "title": "Pour les utilisateurs",
-          "bullets": [
-            "recherche d’entreprises et de services,",
-            "navigation par catégories et localisations,",
-            "accès pratique à des informations à jour."
+          "paragraphs": [
+            "Les utilisateurs obtiennent un accès pratique à des entreprises, services et offres vérifiés",
+            "au sein de la plateforme et de la future application mobile."
+          ]
+        },
+        "nonprofit": {
+          "title": "Pour les associations et initiatives sociales",
+          "paragraphs": [
+            "À l’avenir, AvenEzer prévoit de soutenir les organisations à but non lucratif et les projets sociaux,",
+            "en leur offrant de la visibilité, un accès à la communauté et une place dans un écosystème mondial de confiance."
           ]
         }
+      },
+      "ecosystem": {
+        "title": "L’écosystème AvenEzer",
+        "paragraphs": [
+          "AvenEzer est un écosystème où les entreprises gagnent en visibilité,",
+          "les Avers obtiennent des opportunités de développement et de revenus,",
+          "les utilisateurs accèdent facilement aux services,",
+          "et les associations disposent d’un espace de soutien et de collaboration."
+        ]
+      },
+      "developmentNote": {
+        "title": "Note",
+        "paragraphs": [
+          "Certaines fonctionnalités de la plateforme sont en cours de développement et seront disponibles dans les prochaines versions."
+        ]
       }
     }
   },
@@ -78,34 +105,39 @@
   "about": {
     "meta": {
       "title": "AvenEzer — À propos",
-      "description": "À propos d’AvenEzer, notre mission et notre approche pour développer un écosystème numérique international."
+      "description": "À propos d’AvenEzer : mission, approche de développement et principes de construction d’un écosystème numérique international."
     },
     "hero": {
       "eyebrow": "À PROPOS",
       "title": "À propos de l’entreprise",
-      "subtitle": "AvenEzer est une plateforme indépendante qui évolue comme un écosystème numérique international."
+      "subtitle": "AvenEzer se développe comme un écosystème numérique international qui relie les entreprises, les partenaires Aver et les utilisateurs au sein d’une structure unique — avec un focus sur la confiance, des règles claires et un développement progressif."
     },
     "sections": {
       "aboutCompany": {
         "title": "À propos de l’entreprise",
         "paragraphs": [
-          "Nous créons un environnement technologique qui relie les entreprises, les utilisateurs et des participants indépendants au sein d’une structure unique avec des règles d’interaction claires."
+          "Nous construisons un environnement technologique où les entreprises gagnent en visibilité et en présence numérique,",
+          "les Avers contribuent à la croissance de l’écosystème en tant que partenaires indépendants,",
+          "et les utilisateurs accèdent à des services et des offres au sein de la plateforme et de la future application mobile."
         ]
       },
       "mission": {
         "title": "Mission d’AvenEzer",
         "paragraphs": [
-          "Notre mission est de créer une plateforme numérique moderne qui simplifie les interactions entre les entreprises et les utilisateurs et établit un nouveau standard de navigation et de présence en ligne."
+          "Notre mission est de créer une plateforme moderne qui simplifie les interactions entre les entreprises et les utilisateurs,",
+          "et de poser les bases d’un écosystème mondial de confiance et de collaboration."
         ]
       },
       "approach": {
         "title": "Approche de développement",
-        "paragraphs": ["AvenEzer se développe par étapes, avec un focus sur :"],
+        "paragraphs": [
+          "AvenEzer se développe par étapes. Nous privilégions la solidité du socle plutôt que des promesses trop ambitieuses."
+        ],
         "bullets": [
-          "une architecture stable,",
-          "une logique d’utilisation claire,",
-          "la scalabilité,",
-          "une valeur à long terme pour les participants."
+          "architecture stable et logique d’utilisation claire,",
+          "rôles définis et règles transparentes au sein de l’écosystème,",
+          "scalabilité à travers les villes, les pays et les communautés,",
+          "valeur à long terme pour les participants de la plateforme."
         ]
       }
     }
@@ -114,24 +146,34 @@
   "avers": {
     "meta": {
       "title": "AvenEzer — Avers",
-      "description": "Qui sont les Avers, leur rôle dans l’écosystème AvenEzer et l’AvenEzer School en tant qu’école de formation interne."
+      "description": "Qui sont les Avers, comment ils contribuent à l’écosystème AvenEzer et leur rôle dans l’intégration des entreprises."
     },
     "hero": {
       "eyebrow": "AVERS",
       "title": "Qui sont les Avers",
-      "subtitle": "Un Aver est un participant indépendant de l’écosystème AvenEzer qui contribue au développement de la plateforme, aide les entreprises et les utilisateurs à s’orienter dans le système et utilise les outils de la plateforme."
+      "subtitle": "Un Aver est un partenaire indépendant de la plateforme AvenEzer qui aide les entreprises à rejoindre l’écosystème, développe le réseau et reçoit une rémunération pour sa contribution."
     },
     "sections": {
-      "role": {
-        "title": "Rôle des Avers",
+      "who": {
+        "title": "Qui sont les Avers",
         "paragraphs": [
-          "Les Avers agissent de manière autonome et interagissent avec la plateforme conformément aux règles internes et aux conditions de participation."
+          "Un Aver est un partenaire indépendant de la plateforme AvenEzer qui aide les entreprises à se connecter à l’écosystème,",
+          "développe le réseau et reçoit une rémunération pour sa contribution.",
+          "Les Avers constituent un maillon clé entre la plateforme et les entreprises dans les villes et les pays."
+        ]
+      },
+      "clarity": {
+        "title": "Positionnement clair",
+        "bullets": [
+          "Un Aver n’est pas un employé",
+          "Un Aver n’est pas un agent commercial",
+          "Un Aver est un partenaire de l’écosystème"
         ]
       },
       "school": {
         "title": "AvenEzer School",
         "paragraphs": [
-          "AvenEzer School est une école de formation interne destinée aux Avers."
+          "AvenEzer School est un programme de formation interne destiné à accompagner les Avers dans leur activité au sein de l’écosystème."
         ],
         "bulletsTitle": "L’école a pour objectif de",
         "bullets": [
@@ -141,7 +183,7 @@
         ]
       },
       "note": {
-        "title": "Format de formation",
+        "title": "Note",
         "paragraphs": [
           "Le format de formation et le contenu des programmes sont définis par l’entreprise et peuvent évoluer."
         ]
@@ -211,29 +253,36 @@
   "platform": {
     "meta": {
       "title": "AvenEzer — Plateforme MVP",
-      "description": "Présentation de la plateforme web MVP d’AvenEzer : objectif, tests, structure et règles d’utilisation."
+      "description": "Présentation de la plateforme web MVP d’AvenEzer : ce qui est disponible aujourd’hui, comment l’utiliser et comment la plateforme va évoluer."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP",
       "title": "Plateforme web MVP AvenEzer",
-      "subtitle": "Le MVP est la première version fonctionnelle de la plateforme AvenEzer. Il sert à tester les fonctionnalités, structurer la plateforme, recueillir des retours et préparer les prochaines étapes de développement."
+      "subtitle": "Le MVP est la première version fonctionnelle d’AvenEzer. Il est conçu pour tester l’approche, la structure et les interactions au sein de l’écosystème — sans promesses excessives et avec un développement progressif."
     },
     "sections": {
       "purpose": {
         "title": "Objectif du MVP",
         "paragraphs": [
+          "Le MVP permet de poser les bases de la plateforme : la structure, la logique d’utilisation et les règles d’interaction entre les participants.",
           "Les fonctionnalités du MVP peuvent évoluer ou être enrichies avec le temps."
         ]
       },
       "how": {
         "title": "Comment utiliser la plateforme",
         "paragraphs": [
-          "La plateforme est disponible pour les entreprises et les utilisateurs qui souhaitent :"
+          "La plateforme est disponible pour les entreprises et les utilisateurs qui souhaitent découvrir AvenEzer et rejoindre l’écosystème dès ses débuts."
         ],
         "bullets": [
-          "découvrir les possibilités d’AvenEzer,",
-          "créer un profil (si la fonctionnalité correspondante est disponible),",
-          "utiliser la plateforme conformément aux règles établies."
+          "consulter des profils d’entreprise et la structure de base de l’annuaire,",
+          "explorer les possibilités de la plateforme,",
+          "utiliser les fonctionnalités disponibles conformément aux règles établies."
+        ]
+      },
+      "note": {
+        "title": "Note",
+        "paragraphs": [
+          "Certaines fonctionnalités de la plateforme sont en cours de développement et seront disponibles dans les prochaines versions."
         ]
       }
     }

@@ -7,7 +7,7 @@ import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 
 // lucide icons
-import { Users, GraduationCap, ShieldCheck } from "lucide-react";
+import { Users, BadgeCheck, GraduationCap, ShieldCheck } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -39,9 +39,13 @@ export default async function AversPage({
     namespace: "avers",
   });
 
-  const roleParagraphs = t.raw("sections.role.paragraphs") as string[];
+  const whoParagraphs = t.raw("sections.who.paragraphs") as string[];
+
+  const clarityBullets = t.raw("sections.clarity.bullets") as string[];
+
   const schoolParagraphs = t.raw("sections.school.paragraphs") as string[];
   const schoolBullets = t.raw("sections.school.bullets") as string[];
+
   const noteParagraphs = t.raw("sections.note.paragraphs") as string[];
 
   return (
@@ -52,19 +56,33 @@ export default async function AversPage({
         subtitle={t("hero.subtitle")}
       />
 
+      {/* ✅ Who are Avers */}
       <Section
-        id="avers-role"
+        id="avers-who"
         title={
           <span className="inline-flex items-center gap-2">
             <Users className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.role.title")}
+            {t("sections.who.title")}
           </span>
         }
       >
-        <InfoBlock paragraphs={roleParagraphs} />
-        <Bullets blocks={[]} />
+        <InfoBlock paragraphs={whoParagraphs} />
       </Section>
 
+      {/* ✅ Micro clarity block */}
+      <Section
+        id="avers-clarity"
+        title={
+          <span className="inline-flex items-center gap-2">
+            <BadgeCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
+            {t("sections.clarity.title")}
+          </span>
+        }
+      >
+        <Bullets blocks={[{ bullets: clarityBullets }]} />
+      </Section>
+
+      {/* School stays, but as a supporting tool */}
       <Section
         id="school"
         title={
@@ -85,8 +103,9 @@ export default async function AversPage({
         />
       </Section>
 
+      {/* Honest note */}
       <Section
-        id="school-note"
+        id="note"
         title={
           <span className="inline-flex items-center gap-2">
             <ShieldCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
@@ -95,7 +114,6 @@ export default async function AversPage({
         }
       >
         <InfoBlock paragraphs={noteParagraphs} />
-        <Bullets blocks={[]} />
       </Section>
     </>
   );
