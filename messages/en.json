@@ -284,6 +284,48 @@
       }
     }
   },
+  "auth": {
+    "loginTitle": "Login",
+    "registerTitle": "Create account",
+
+    "email": "Email",
+    "password": "Password",
+    "passwordRepeat": "Repeat password",
+
+    "loginBtn": "Login",
+    "registerBtn": "Create account",
+
+    "loginLink": "I already have an account",
+    "registerLink": "Create account",
+    "forgot": "Forgot password?",
+
+    "loading": "Loading...",
+
+    "errors": {
+      "invalidEmail": "Invalid email address",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordsNotMatch": "Passwords do not match",
+      "invalidCredentials": "Invalid email or password",
+      "emailInUse": "Email already in use",
+      "network": "Network error",
+      "unknown": "Something went wrong, please try again",
+      "legalRequired": "You must agree to the Terms of Use and Legal Policies",
+      "invalidToken": "Invalid or expired token"
+    },
+    "consentPrefix": "I agree to the",
+    "termsLink": "Terms of Use",
+    "and": "and",
+    "legalLink": "Legal Policies",
+    "forgotTitle": "Forgot password",
+    "forgotHint": "Enter your email and we’ll send a reset link.",
+    "forgotBtn": "Send reset link",
+    "forgotSent": "If the email exists, we sent a reset link.",
+    "backToLogin": "Back to login",
+    "resetTitle": "Reset password",
+    "newPassword": "New password",
+    "resetBtn": "Update password",
+    "resetOk": "Password updated. Redirecting to login..."
+  },
   "footer": {
     "tagline": "A digital platform for businesses and users"
   }
