@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
+import Reveal from "@/components/animation/Reveal";
 
 import { UsersRound } from "lucide-react";
 
@@ -42,24 +43,32 @@ export default async function ConnectiaPage({
 
   return (
     <>
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-      />
+      <Reveal variant="block">
+        <PageHero
+          eyebrow={t("hero.eyebrow")}
+          title={t("hero.title")}
+          subtitle={t("hero.subtitle")}
+        />
+      </Reveal>
 
-      <Section
-        id="connectia-part"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <UsersRound className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.part.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={partParagraphs} />
-        <Bullets blocks={[]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="connectia-part"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <UsersRound className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.part.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={partParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[]} />
+          </Reveal>
+        </Section>
+      </Reveal>
     </>
   );
 }

@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
+import Reveal from "@/components/animation/Reveal";
 
 import { Building2, Target, Layers3 } from "lucide-react";
 
@@ -47,50 +48,70 @@ export default async function AboutPage({
 
   return (
     <>
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-      />
+      <Reveal variant="block">
+        <PageHero
+          eyebrow={t("hero.eyebrow")}
+          title={t("hero.title")}
+          subtitle={t("hero.subtitle")}
+        />
+      </Reveal>
 
-      <Section
-        id="about-company"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Building2 className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.aboutCompany.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={aboutCompanyParagraphs} />
-        <Bullets blocks={[]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="about-company"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Building2 className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.aboutCompany.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={aboutCompanyParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[]} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
-      <Section
-        id="mission"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Target className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.mission.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={missionParagraphs} />
-        <Bullets blocks={[]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="mission"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Target className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.mission.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={missionParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[]} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
-      <Section
-        id="approach"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Layers3 className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.approach.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={approachParagraphs} />
-        <Bullets blocks={[{ bullets: approachBullets }]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="approach"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Layers3 className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.approach.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={approachParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[{ bullets: approachBullets }]} />
+          </Reveal>
+        </Section>
+      </Reveal>
     </>
   );
 }

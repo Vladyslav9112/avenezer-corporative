@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
+import Reveal from "@/components/animation/Reveal";
 
 import { Rocket, MousePointerClick, ShieldCheck } from "lucide-react";
 
@@ -46,49 +47,65 @@ export default async function PlatformPage({
 
   return (
     <>
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-      />
+      <Reveal variant="block">
+        <PageHero
+          eyebrow={t("hero.eyebrow")}
+          title={t("hero.title")}
+          subtitle={t("hero.subtitle")}
+        />
+      </Reveal>
 
-      <Section
-        id="mvp-purpose"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Rocket className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.purpose.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={purposeParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="mvp-purpose"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Rocket className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.purpose.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={purposeParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
-      <Section
-        id="how-to-use"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <MousePointerClick className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.how.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={howParagraphs} />
-        <Bullets blocks={[{ bullets: howBullets }]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="how-to-use"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <MousePointerClick className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.how.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={howParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[{ bullets: howBullets }]} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
       {/* ✅ Honest note (no overpromises) */}
-      <Section
-        id="platform-note"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <ShieldCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.note.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={noteParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="platform-note"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <ShieldCheck className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.note.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={noteParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
     </>
   );
 }

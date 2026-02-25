@@ -55,6 +55,8 @@ model LessonAccess {
   provider           PaymentProvider?
   providerOrderId    String?  @unique
   profileConfirmedAt DateTime?
+  completedLessons   Int      @default(0)
+  lastCompletedAt    DateTime?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

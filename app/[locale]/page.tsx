@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
+import Reveal from "@/components/animation/Reveal";
 
 import {
   LayoutDashboard,
@@ -84,115 +85,149 @@ export default async function Home({
 
   return (
     <>
-      <PageHero
-        eyebrow={t("hero.eyebrow")}
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-      />
+      <Reveal variant="block">
+        <PageHero
+          eyebrow={t("hero.eyebrow")}
+          title={t("hero.title")}
+          subtitle={t("hero.subtitle")}
+        />
+      </Reveal>
 
-      <Section
-        id="platform-today"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <LayoutDashboard className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.platformToday.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={platformTodayParagraphs} />
-        <Bullets blocks={[{ bullets: platformTodayBullets }]} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="platform-today"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <LayoutDashboard className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.platformToday.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={platformTodayParagraphs} />
+          </Reveal>
+          <Reveal variant="text" delay={0.05}>
+            <Bullets blocks={[{ bullets: platformTodayBullets }]} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
-      <Section
-        id="mvp-note"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Info className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.mvpNote.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={mvpNoteParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="mvp-note"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Info className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.mvpNote.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={mvpNoteParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
-      <Section
-        id="next-stage"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Smartphone className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.nextStage.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={nextStageParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="next-stage"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Smartphone className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.nextStage.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={nextStageParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
       {/* ✅ For whom (critical block) */}
-      <Section
-        id="for-whom"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Users className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.forWhom.title")}
-          </span>
-        }
-      >
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
-            <h3 className="mb-2 text-lg font-semibold text-[#222]">
-              {t("sections.forWhom.business.title")}
-            </h3>
-            <InfoBlock paragraphs={forWhomBusinessParagraphs} />
-          </div>
+      <Reveal variant="block">
+        <Section
+          id="for-whom"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Users className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.forWhom.title")}
+            </span>
+          }
+        >
+          <div className="grid gap-6 md:grid-cols-2">
+            <Reveal variant="block">
+              <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
+                <h3 className="mb-2 text-lg font-semibold text-[#222]">
+                  {t("sections.forWhom.business.title")}
+                </h3>
+                <InfoBlock paragraphs={forWhomBusinessParagraphs} />
+              </div>
+            </Reveal>
 
-          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
-            <h3 className="mb-2 text-lg font-semibold text-[#222]">
-              {t("sections.forWhom.avers.title")}
-            </h3>
-            <InfoBlock paragraphs={forWhomAversParagraphs} />
-          </div>
+            <Reveal variant="block" delay={0.05}>
+              <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
+                <h3 className="mb-2 text-lg font-semibold text-[#222]">
+                  {t("sections.forWhom.avers.title")}
+                </h3>
+                <InfoBlock paragraphs={forWhomAversParagraphs} />
+              </div>
+            </Reveal>
 
-          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
-            <h3 className="mb-2 text-lg font-semibold text-[#222]">
-              {t("sections.forWhom.users.title")}
-            </h3>
-            <InfoBlock paragraphs={forWhomUsersParagraphs} />
-          </div>
+            <Reveal variant="block" delay={0.1}>
+              <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
+                <h3 className="mb-2 text-lg font-semibold text-[#222]">
+                  {t("sections.forWhom.users.title")}
+                </h3>
+                <InfoBlock paragraphs={forWhomUsersParagraphs} />
+              </div>
+            </Reveal>
 
-          <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
-            <h3 className="mb-2 text-lg font-semibold text-[#222]">
-              {t("sections.forWhom.nonprofit.title")}
-            </h3>
-            <InfoBlock paragraphs={forWhomNonprofitParagraphs} />
+            <Reveal variant="block" delay={0.15}>
+              <div className="rounded-2xl border border-black/10 bg-white/70 p-5">
+                <h3 className="mb-2 text-lg font-semibold text-[#222]">
+                  {t("sections.forWhom.nonprofit.title")}
+                </h3>
+                <InfoBlock paragraphs={forWhomNonprofitParagraphs} />
+              </div>
+            </Reveal>
           </div>
-        </div>
-      </Section>
+        </Section>
+      </Reveal>
 
       {/* ✅ Ecosystem short picture */}
-      <Section
-        id="ecosystem"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <Network className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.ecosystem.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={ecosystemParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="ecosystem"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <Network className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.ecosystem.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={ecosystemParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
 
       {/* ✅ Small strategic note */}
-      <Section
-        id="development-note"
-        title={
-          <span className="inline-flex items-center gap-2">
-            <BadgeInfo className="h-7.5 w-7.5 text-[#2A5D59]" />
-            {t("sections.developmentNote.title")}
-          </span>
-        }
-      >
-        <InfoBlock paragraphs={developmentNoteParagraphs} />
-      </Section>
+      <Reveal variant="block">
+        <Section
+          id="development-note"
+          title={
+            <span className="inline-flex items-center gap-2">
+              <BadgeInfo className="h-7.5 w-7.5 text-[#2A5D59]" />
+              {t("sections.developmentNote.title")}
+            </span>
+          }
+        >
+          <Reveal variant="text">
+            <InfoBlock paragraphs={developmentNoteParagraphs} />
+          </Reveal>
+        </Section>
+      </Reveal>
     </>
   );
 }

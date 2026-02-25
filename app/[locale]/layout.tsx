@@ -7,6 +7,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { locales } from "@/i18n";
+import GlobalAnimatedBackground from "@/components/animation/GlobalAnimatedBackground";
+import PageTransition from "@/components/animation/PageTransition";
 
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
@@ -46,12 +48,15 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${displayFont.variable} ${bodyFont.variable} min-h-screen bg-[var(--bg-main)] font-[var(--font-body)] text-[var(--text-invert)] antialiased`}
+        className={`${displayFont.variable} ${bodyFont.variable} min-h-screen bg-(--bg-main) font-(--font-body) text-(--text-invert) antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <GlobalAnimatedBackground />
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1">
+              <PageTransition>{children}</PageTransition>
+            </main>
             <Footer />
           </div>
         </NextIntlClientProvider>

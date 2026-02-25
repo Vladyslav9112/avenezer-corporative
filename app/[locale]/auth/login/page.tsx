@@ -9,7 +9,7 @@ export default function LoginPage() {
   const t = useTranslations("auth");
   const router = useRouter();
   const sp = useSearchParams();
-  const next = sp.get("next") || "/";
+  const next = sp.get("next") || "/school";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

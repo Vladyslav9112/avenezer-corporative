@@ -153,6 +153,25 @@
       "title": "Qui sont les Avers",
       "subtitle": "Un Aver est un partenaire indépendant de la plateforme AvenEzer qui aide les entreprises à rejoindre l’écosystème, développe le réseau et reçoit une rémunération pour sa contribution."
     },
+    "cta": {
+      "title": "Devenir AVER",
+      "subtitle": "Rejoignez le programme AVER et accédez à la formation, aux outils et aux opportunités au sein de la communauté.",
+
+      "button": "Devenir AVER",
+
+      "cards": {
+        "communityTitle": "Communauté",
+        "communityText": "Réseautage, soutien et accès à de nouvelles opportunités.",
+
+        "educationTitle": "Formation",
+        "educationText": "Programme de l’école AVER et supports pratiques.",
+
+        "trustTitle": "Confiance",
+        "trustText": "Règles transparentes, responsabilité et interaction sécurisée."
+      },
+
+      "note": "Complétez l’inscription — nous vous contacterons et vous guiderons dans les prochaines étapes."
+    },
     "sections": {
       "who": {
         "title": "Qui sont les Avers",

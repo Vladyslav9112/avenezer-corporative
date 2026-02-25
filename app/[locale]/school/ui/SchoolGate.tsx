@@ -84,10 +84,6 @@ export default function SchoolGate(props: {
             />
           </PayPalProvider>
         </div>
-
-        <p className="mt-2 text-xs text-[var(--text-muted)]">
-          * Зараз це тестова кнопка. Далі підключимо PayPal.
-        </p>
       </div>
     );
   }
