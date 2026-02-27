@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/navigation";
 
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
@@ -109,6 +110,17 @@ export default async function AboutPage({
           </Reveal>
           <Reveal variant="text" delay={0.05}>
             <Bullets blocks={[{ bullets: approachBullets }]} />
+          </Reveal>
+          <Reveal variant="text" delay={0.08}>
+            <div className="pt-2">
+              <Link
+                href="/faq"
+                locale={locale}
+                className="inline-flex items-center rounded-lg bg-[#2A5D59] px-4 py-2 text-sm font-medium text-[var(--text-invert)] transition hover:bg-[#3f7a72]"
+              >
+                {t("sections.faqLink")}
+              </Link>
+            </div>
           </Reveal>
         </Section>
       </Reveal>

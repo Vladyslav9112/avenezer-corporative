@@ -10,6 +10,7 @@
     "platform": "Platform",
     "avers": "Avers",
     "connectia": "Connectia",
+    "faq": "FAQ",
     "contact": "Contact",
     "menu": "Menu",
     "language": "Language"
@@ -138,9 +139,223 @@
           "scalability across cities, countries and communities,",
           "long-term value for platform participants."
         ]
+      },
+      "faqLink": "Frequently asked questions"
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "AvenEzer — FAQ",
+      "description": "Answers to common questions about AvenEzer, the Aver Program, the AvenEzer app, and Aver School."
+    },
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "subtitle": "Key information about the AvenEzer platform, the Aver Program, and the AvenEzer app in clear and concise answers."
+    },
+    "sections": {
+      "general": {
+        "title": "AvenEzer — general questions",
+        "items": [
+          {
+            "q": "Can you earn with AvenEzer?",
+            "a": [
+              "Yes. AvenEzer is a partner-based digital platform where Avers receive rewards for connecting businesses and helping grow the platform."
+            ],
+            "bullets": [
+              "An Aver is not a company employee.",
+              "An Aver is not a classic sales agent.",
+              "An Aver is not part of network marketing."
+            ]
+          },
+          {
+            "q": "Is AvenEzer an MLM system?",
+            "a": [
+              "No. AvenEzer is a partner-based digital platform, not a multi-level marketing (MLM) system.",
+              "Avers are independent partners who help the platform grow."
+            ]
+          }
+        ]
+      },
+      "app": {
+        "title": "AvenEzer app",
+        "items": [
+          {
+            "q": "What is the AvenEzer app?",
+            "a": [
+              "The AvenEzer app is a mobile application being developed by AvenEzer Inc.",
+              "It will become part of the platform and expand capabilities for businesses and users."
+            ]
+          },
+          {
+            "q": "How is the AvenEzer app different from Google Maps?",
+            "a": [
+              "The AvenEzer app is not just a map. It is an ecosystem that connects businesses, Aver partners, users, communities, and social initiatives."
+            ]
+          }
+        ]
+      },
+      "nonprofit": {
+        "title": "AvenEzer and nonprofits",
+        "items": [
+          {
+            "q": "Does AvenEzer work with nonprofits?",
+            "a": [
+              "AvenEzer plans to support nonprofits and social initiatives in future versions of the platform and the AvenEzer app.",
+              "Nonprofit organizations will be able to gain visibility and become part of a global ecosystem of trust."
+            ]
+          },
+          {
+            "q": "Is AvenEzer only a commercial project?",
+            "a": [
+              "No. AvenEzer combines a business model with a social and community mission."
+            ]
+          }
+        ]
+      },
+      "additional": {
+        "title": "Additional information",
+        "items": [
+          {
+            "q": "In which countries does AvenEzer operate?",
+            "a": [
+              "AvenEzer has an international format and is designed to operate across different countries and cities."
+            ]
+          },
+          {
+            "q": "Are all features already available?",
+            "a": [
+              "No. Some features are still in development and will be added in upcoming versions of the platform and the AvenEzer app."
+            ]
+          }
+        ]
+      },
+      "averProgram": {
+        "title": "Aver Program",
+        "items": [
+          {
+            "q": "Who are Avers?",
+            "a": [
+              "An Aver is an independent partner of AvenEzer Inc., a Canadian corporation building an international digital ecosystem for businesses, users, and communities.",
+              "Avers help businesses join the AvenEzer platform and prepare for presence in the AvenEzer app, contributing to ecosystem growth."
+            ]
+          },
+          {
+            "q": "What is the Aver Program?",
+            "a": [
+              "The Aver Program is AvenEzer Inc.'s partner program that enables participation in platform development, business onboarding, and earning rewards for contribution.",
+              "The Aver Program is not employment and not a traditional sales model."
+            ]
+          },
+          {
+            "q": "What does an Aver do?",
+            "a": [
+              "An Aver introduces businesses to AvenEzer, explains platform and app opportunities, helps businesses join the ecosystem, and supports local growth.",
+              "Avers are a key link between the platform and local businesses."
+            ]
+          },
+          {
+            "q": "Can you earn in the Aver Program?",
+            "a": [
+              "Yes. Avers receive rewards for bringing businesses and participating in AvenEzer platform growth.",
+              "The reward format depends on partner program terms and the platform development stage."
+            ]
+          },
+          {
+            "q": "Is an Aver a company employee?",
+            "a": [
+              "No. An Aver is an independent partner, not an employee of AvenEzer Inc."
+            ],
+            "bullets": [
+              "No labor employment relationship with the company.",
+              "Independent choice of participation format.",
+              "No mandatory plans or quotas."
+            ]
+          },
+          {
+            "q": "Is the Aver Program network marketing (MLM)?",
+            "a": [
+              "No. The Aver Program is a partner-based digital program, not a multi-level marketing (MLM) system.",
+              "Avers do not sell products and do not buy mandatory participation packages."
+            ]
+          },
+          {
+            "q": "Who is the Aver Program for?",
+            "a": [
+              "The Aver Program is suitable for people in different countries and cities who have local business contacts, want to help build a digital platform, prefer a flexible partner format, and want to join an international project early."
+            ]
+          },
+          {
+            "q": "In which countries can you become an Aver?",
+            "a": [
+              "The Aver Program has an international format. Avers can join from different countries and develop the platform locally."
+            ]
+          },
+          {
+            "q": "How can you become an Aver?",
+            "a": [
+              "To become an Aver: learn about the AvenEzer platform, submit an application to join the Aver Program, receive materials and guidance, and start onboarding businesses into the AvenEzer ecosystem."
+            ]
+          },
+          {
+            "q": "Aver Program and the AvenEzer app",
+            "a": [
+              "Avers play an important role in preparing businesses for presence in the AvenEzer app.",
+              "As the platform evolves, opportunities for Avers will expand along with AvenEzer app functionality."
+            ]
+          }
+        ]
+      },
+      "averSchool": {
+        "title": "Aver School",
+        "items": [
+          {
+            "q": "Is there training for Avers?",
+            "a": [
+              "Yes. Aver partners receive training that helps them understand the AvenEzer platform, the Aver role, and principles of working with businesses."
+            ]
+          },
+          {
+            "q": "What is Aver School?",
+            "a": [
+              "Aver School is a training program for Aver partners created by AvenEzer Inc."
+            ],
+            "bullets": [
+              "helps understand how the AvenEzer platform works,",
+              "teaches how to present the platform to businesses correctly,",
+              "explains the role of an Aver in the ecosystem,",
+              "builds confident and systematic actions even without prior experience."
+            ]
+          },
+          {
+            "q": "Do you need sales or marketing experience?",
+            "a": [
+              "No. Aver School is designed so people without sales, marketing, or IT experience can learn clearly and step by step."
+            ]
+          },
+          {
+            "q": "How does the training work?",
+            "a": [
+              "Training is step-by-step and includes introduction to the platform and app, basic business communication principles, practical startup recommendations, learning materials, and team support."
+            ]
+          },
+          {
+            "q": "When can training start?",
+            "a": [
+              "Access to Aver School is provided after joining the Aver Program. Training is online and can be completed at a convenient pace."
+            ]
+          },
+          {
+            "q": "What happens after training?",
+            "a": [
+              "After completing training, an Aver understands how the AvenEzer ecosystem works, knows how to onboard businesses, and can start practical participation in platform growth in their city or country."
+            ]
+          }
+        ]
       }
     }
   },
+
   "avers": {
     "meta": {
       "title": "AvenEzer — Avers",
@@ -346,6 +561,9 @@
     "resetOk": "Password updated. Redirecting to login..."
   },
   "footer": {
-    "tagline": "A digital platform for businesses and users"
+    "tagline": "A digital platform for businesses and users",
+    "faq": "FAQ",
+    "terms": "Terms of Use",
+    "legal": "Legal Policies"
   }
 }

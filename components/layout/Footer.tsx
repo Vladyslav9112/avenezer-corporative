@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
+import { Link as LocalizedLink } from "@/navigation";
 
 const SITE = {
   brand: "AvenEzer",
@@ -34,19 +35,26 @@ export function Footer() {
               {SITE.domain}
             </Link>
 
-            <Link
+            <LocalizedLink
+              href="/faq"
+              className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
+            >
+              {t("faq")}
+            </LocalizedLink>
+
+            <LocalizedLink
               href="/terms"
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
-              Terms of Use
-            </Link>
+              {t("terms")}
+            </LocalizedLink>
 
-            <Link
+            <LocalizedLink
               href="/legal"
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
-              Legal Policies
-            </Link>
+              {t("legal")}
+            </LocalizedLink>
           </div>
         </div>
 

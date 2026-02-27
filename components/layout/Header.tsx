@@ -29,6 +29,7 @@ export function Header() {
       { label: t("platform"), href: "/platform" },
       { label: t("avers"), href: "/avers" },
       { label: t("connectia"), href: "/connectia" },
+      { label: t("faq"), href: "/faq" },
       { label: t("contact"), href: "/contact" },
     ],
     [t],
@@ -53,7 +54,7 @@ export function Header() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden items-center  md:flex">
+          <nav className="hidden items-center lg:flex">
             {nav.map((item) => {
               const active = isActive(item.href);
               return (
@@ -75,7 +76,7 @@ export function Header() {
           </nav>
 
           {/* MOBILE RIGHT SIDE (Language + Menu) */}
-          <div className="flex items-center gap-2 md:hidden">
+          <div className="flex items-center gap-2 lg:hidden">
             {/* ✅ ТЕПЕР свічер видно завжди на мобілці */}
 
             <button
@@ -97,7 +98,7 @@ export function Header() {
       {/* MOBILE NAV */}
       <div
         id="mobile-nav"
-        className={`border-b border-black/10 bg-[color:rgba(79,140,131,0.96)] md:hidden ${
+        className={`border-b border-black/10 bg-[color:rgba(79,140,131,0.96)] lg:hidden ${
           isOpen ? "block" : "hidden"
         }`}
       >

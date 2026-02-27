@@ -10,6 +10,7 @@
     "platform": "Plateforme",
     "avers": "Avers",
     "connectia": "Connectia",
+    "faq": "FAQ",
     "contact": "Contact",
     "menu": "Menu",
     "language": "Langue"
@@ -138,6 +139,220 @@
           "rôles définis et règles transparentes au sein de l’écosystème,",
           "scalabilité à travers les villes, les pays et les communautés,",
           "valeur à long terme pour les participants de la plateforme."
+        ]
+      },
+      "faqLink": "Questions fréquentes"
+    }
+  },
+
+  "faq": {
+    "meta": {
+      "title": "AvenEzer — FAQ",
+      "description": "Réponses aux questions fréquentes sur AvenEzer, le programme Aver, l’application AvenEzer et Aver School."
+    },
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Questions fréquentes",
+      "subtitle": "Informations clés sur la plateforme AvenEzer, le programme Aver et l’application AvenEzer sous forme de réponses claires et concises."
+    },
+    "sections": {
+      "general": {
+        "title": "AvenEzer — questions générales",
+        "items": [
+          {
+            "q": "Peut-on gagner avec AvenEzer ?",
+            "a": [
+              "Oui. AvenEzer est une plateforme numérique partenariale où les Avers reçoivent une rémunération pour l’intégration d’entreprises et le développement de la plateforme."
+            ],
+            "bullets": [
+              "Un Aver n’est pas un employé de l’entreprise.",
+              "Un Aver n’est pas un agent commercial classique.",
+              "Un Aver ne fait pas partie d’un système MLM."
+            ]
+          },
+          {
+            "q": "AvenEzer est-il un MLM ?",
+            "a": [
+              "Non. AvenEzer est une plateforme numérique partenariale, et non un système de marketing de réseau (MLM).",
+              "Les Avers sont des partenaires indépendants qui contribuent à la croissance de la plateforme."
+            ]
+          }
+        ]
+      },
+      "app": {
+        "title": "Application AvenEzer",
+        "items": [
+          {
+            "q": "Qu’est-ce que l’application AvenEzer ?",
+            "a": [
+              "L’application AvenEzer est une application mobile développée par AvenEzer Inc.",
+              "Elle fera partie de la plateforme et élargira les possibilités pour les entreprises et les utilisateurs."
+            ]
+          },
+          {
+            "q": "En quoi l’application AvenEzer est-elle différente de Google Maps ?",
+            "a": [
+              "L’application AvenEzer n’est pas qu’une carte. C’est un écosystème qui relie entreprises, partenaires Aver, utilisateurs, communautés et initiatives sociales."
+            ]
+          }
+        ]
+      },
+      "nonprofit": {
+        "title": "AvenEzer et les organisations à but non lucratif",
+        "items": [
+          {
+            "q": "AvenEzer travaille-t-il avec des organisations non lucratives ?",
+            "a": [
+              "AvenEzer prévoit de soutenir les organisations non lucratives et les initiatives sociales dans les futures versions de la plateforme et de l’application.",
+              "Ces organisations pourront gagner en visibilité et faire partie d’un écosystème mondial de confiance."
+            ]
+          },
+          {
+            "q": "AvenEzer est-il uniquement un projet commercial ?",
+            "a": [
+              "Non. AvenEzer combine un modèle économique avec une mission sociale et communautaire."
+            ]
+          }
+        ]
+      },
+      "additional": {
+        "title": "Informations complémentaires",
+        "items": [
+          {
+            "q": "Dans quels pays AvenEzer est-il présent ?",
+            "a": [
+              "AvenEzer a un format international et est conçu pour fonctionner dans différents pays et villes."
+            ]
+          },
+          {
+            "q": "Toutes les fonctionnalités sont-elles déjà disponibles ?",
+            "a": [
+              "Non. Une partie des fonctionnalités est encore en développement et sera ajoutée dans les prochaines versions de la plateforme et de l’application."
+            ]
+          }
+        ]
+      },
+      "averProgram": {
+        "title": "Programme Aver",
+        "items": [
+          {
+            "q": "Qui sont les Avers ?",
+            "a": [
+              "Un Aver est un partenaire indépendant de la plateforme AvenEzer Inc., une société canadienne qui développe un écosystème numérique international pour les entreprises, les utilisateurs et les communautés.",
+              "Les Avers aident les entreprises à rejoindre la plateforme AvenEzer et à se préparer à leur présence dans l’application mobile."
+            ]
+          },
+          {
+            "q": "Qu’est-ce que le programme Aver ?",
+            "a": [
+              "Le programme Aver est le programme partenarial d’AvenEzer Inc. qui permet de participer au développement de la plateforme, d’intégrer des entreprises à l’écosystème et de recevoir une rémunération pour sa contribution.",
+              "Le programme Aver n’est ni un emploi ni un modèle de vente classique."
+            ]
+          },
+          {
+            "q": "Que fait un Aver ?",
+            "a": [
+              "Un Aver présente la plateforme AvenEzer aux entreprises, explique ses possibilités, aide les entreprises à rejoindre l’écosystème et contribue au développement local de la plateforme.",
+              "Les Avers sont un maillon clé entre la plateforme et les entreprises locales."
+            ]
+          },
+          {
+            "q": "Peut-on gagner dans le programme Aver ?",
+            "a": [
+              "Oui. Les Avers reçoivent une rémunération pour l’intégration d’entreprises et leur participation au développement de la plateforme AvenEzer.",
+              "Le format de rémunération dépend des conditions du programme et de l’étape de développement de la plateforme."
+            ]
+          },
+          {
+            "q": "Un Aver est-il un employé de l’entreprise ?",
+            "a": [
+              "Non. Un Aver est un partenaire indépendant et non un employé d’AvenEzer Inc."
+            ],
+            "bullets": [
+              "Aucune relation de travail salarié avec l’entreprise.",
+              "Choix autonome du format de participation.",
+              "Aucun plan ou quota obligatoire."
+            ]
+          },
+          {
+            "q": "Le programme Aver est-il du marketing de réseau (MLM) ?",
+            "a": [
+              "Non. Le programme Aver est un programme numérique partenarial, pas un système MLM.",
+              "Les Avers ne vendent pas de produits et n’achètent pas de packs obligatoires."
+            ]
+          },
+          {
+            "q": "À qui s’adresse le programme Aver ?",
+            "a": [
+              "Le programme Aver convient aux personnes vivant dans différents pays et villes, ayant des contacts avec des entreprises locales, souhaitant participer au développement d’une plateforme numérique, recherchant un format partenarial flexible et voulant rejoindre un projet international dès le départ."
+            ]
+          },
+          {
+            "q": "Dans quels pays peut-on devenir Aver ?",
+            "a": [
+              "Le programme Aver a un format international. Les Avers peuvent rejoindre depuis différents pays et développer la plateforme localement."
+            ]
+          },
+          {
+            "q": "Comment devenir Aver ?",
+            "a": [
+              "Pour devenir Aver : découvrez la plateforme AvenEzer, envoyez une demande de participation, obtenez l’accès aux supports et aux instructions, puis commencez à intégrer des entreprises à l’écosystème."
+            ]
+          },
+          {
+            "q": "Programme Aver et application AvenEzer",
+            "a": [
+              "Les Avers jouent un rôle important dans la préparation des entreprises à leur présence dans l’application AvenEzer.",
+              "À mesure que la plateforme évolue, les opportunités pour les Avers s’élargissent avec les fonctionnalités de l’application."
+            ]
+          }
+        ]
+      },
+      "averSchool": {
+        "title": "Aver School",
+        "items": [
+          {
+            "q": "Existe-t-il une formation pour les Avers ?",
+            "a": [
+              "Oui. Une formation est prévue pour les partenaires Aver afin de comprendre la plateforme AvenEzer, le rôle d’un Aver et les principes de travail avec les entreprises."
+            ]
+          },
+          {
+            "q": "Qu’est-ce que l’Aver School ?",
+            "a": [
+              "Aver School est un programme de formation pour les partenaires Aver, créé par AvenEzer Inc."
+            ],
+            "bullets": [
+              "aide à comprendre le fonctionnement de la plateforme AvenEzer,",
+              "apprend à présenter correctement la plateforme aux entreprises,",
+              "explique le rôle de l’Aver dans l’écosystème,",
+              "permet d’agir avec confiance et méthode, même sans expérience préalable."
+            ]
+          },
+          {
+            "q": "Faut-il une expérience en vente ou en marketing ?",
+            "a": [
+              "Non. Aver School est conçue pour être compréhensible même sans expérience en vente, marketing ou IT."
+            ]
+          },
+          {
+            "q": "Comment se déroule la formation ?",
+            "a": [
+              "La formation se déroule par étapes : découverte de la plateforme et de l’application, principes de communication avec les entreprises, recommandations pratiques de démarrage, supports pédagogiques et accompagnement de l’équipe."
+            ]
+          },
+          {
+            "q": "Quand peut-on commencer la formation ?",
+            "a": [
+              "L’accès à Aver School est accordé après l’adhésion au programme Aver. La formation est en ligne et peut être suivie à son rythme."
+            ]
+          },
+          {
+            "q": "Que se passe-t-il après la formation ?",
+            "a": [
+              "Après la formation, l’Aver comprend le fonctionnement de l’écosystème AvenEzer, sait intégrer des entreprises à la plateforme et peut commencer une participation concrète au développement d’AvenEzer dans sa ville ou son pays."
+            ]
+          }
         ]
       }
     }
@@ -349,6 +564,9 @@
     "resetOk": "Mot de passe mis à jour. Redirection vers la connexion..."
   },
   "footer": {
-    "tagline": "Une plateforme numérique pour les entreprises et les utilisateurs"
+    "tagline": "Une plateforme numérique pour les entreprises et les utilisateurs",
+    "faq": "FAQ",
+    "terms": "Conditions d'utilisation",
+    "legal": "Politiques légales"
   }
 }
