@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function CompleteLessonButton(props: {
   locale: string;
@@ -10,6 +11,7 @@ export default function CompleteLessonButton(props: {
   isCompleted: boolean;
 }) {
   const { locale, lessonNumber, totalLessons, isCompleted } = props;
+  const t = useTranslations("lessons");
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -42,7 +44,7 @@ export default function CompleteLessonButton(props: {
 
       const data = await res.json();
       if (!res.ok || !data.ok) {
-        throw new Error(data.error || "Failed to complete lesson");
+        throw new Error(data.error || t("errors.completeFailed"));
       }
 
       if (isLast) {
@@ -52,7 +54,7 @@ export default function CompleteLessonButton(props: {
 
       router.push(`/${locale}/lessons/${data.nextLesson ?? lessonNumber + 1}`);
     } catch (err: any) {
-      setError(err?.message ?? "Failed to complete lesson");
+      setError(err?.message ?? t("errors.completeFailed"));
       setLoading(false);
     }
   }
@@ -61,15 +63,14 @@ export default function CompleteLessonButton(props: {
     if (isLast) {
       return (
         <div className="mt-6 rounded-2xl border border-black/10 bg-white p-4 text-sm text-(--text-muted)">
-          Усі уроки пройдено ✅
+          {t("completedAll")} ✅
         </div>
       );
     }
 
     return (
       <div className="mt-6 rounded-2xl border border-black/10 bg-white p-4 text-sm text-(--text-muted)">
-        Урок пройдено ✅ Наступний урок відкриється в меню після завершення
-        поточного.
+        {t("completedCurrent")} ✅
       </div>
     );
   }
@@ -80,10 +81,7 @@ export default function CompleteLessonButton(props: {
     <div className="mt-6 flex flex-col gap-3">
       {error && <p className="text-sm text-red-600">{error}</p>}
       <div className="rounded-2xl border border-black/10 bg-white p-4 text-sm text-(--text-muted)">
-        <p>
-          Щоб позначити урок пройденим, підтвердь ознайомлення та дочекайся
-          таймера.
-        </p>
+        <p>{t("completeHint")}</p>
         <label className="mt-3 flex items-center gap-2 text-sm text-(--text-main)">
           <input
             type="checkbox"
@@ -91,12 +89,12 @@ export default function CompleteLessonButton(props: {
             checked={acknowledged}
             onChange={(event) => setAcknowledged(event.target.checked)}
           />
-          Я ознайомився(лась) з уроком
+          {t("acknowledge")}
         </label>
         <p className="mt-2 text-xs text-(--text-muted)">
           {secondsLeft > 0
-            ? `Зачекай ще ${secondsLeft} сек.`
-            : "Таймер завершено. Можеш завершити урок."}
+            ? t("waitMore", { seconds: secondsLeft })
+            : t("timerDone")}
         </p>
       </div>
       <button
@@ -105,7 +103,7 @@ export default function CompleteLessonButton(props: {
         disabled={!canSubmit}
         onClick={markComplete}
       >
-        {loading ? "Зачекай..." : "Позначити урок пройденим"}
+        {loading ? t("loading") : t("markComplete")}
       </button>
     </div>
   );

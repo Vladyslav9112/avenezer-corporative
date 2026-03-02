@@ -563,6 +563,22 @@
     "resetBtn": "Mettre à jour le mot de passe",
     "resetOk": "Mot de passe mis à jour. Redirection vers la connexion..."
   },
+  "lessons": {
+    "sidebarTitle": "Leçons",
+    "progress": "Progression : {completed}/{total}",
+    "lessonCounter": "Leçon {current} sur {total}",
+    "completedAll": "Toutes les leçons sont terminées",
+    "completedCurrent": "Leçon terminée. La leçon suivante s’ouvrira dans le menu après la fin de celle-ci.",
+    "completeHint": "Pour marquer la leçon comme terminée, confirmez la lecture et attendez la fin du minuteur.",
+    "acknowledge": "J’ai pris connaissance de cette leçon",
+    "waitMore": "Attendez encore {seconds} s.",
+    "timerDone": "Minuteur terminé. Vous pouvez terminer la leçon.",
+    "loading": "Veuillez patienter...",
+    "markComplete": "Marquer la leçon comme terminée",
+    "errors": {
+      "completeFailed": "Impossible de marquer la leçon comme terminée"
+    }
+  },
   "footer": {
     "tagline": "Une plateforme numérique pour les entreprises et les utilisateurs",
     "faq": "FAQ",

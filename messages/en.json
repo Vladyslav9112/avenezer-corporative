@@ -560,6 +560,22 @@
     "resetBtn": "Update password",
     "resetOk": "Password updated. Redirecting to login..."
   },
+  "lessons": {
+    "sidebarTitle": "Lessons",
+    "progress": "Progress: {completed}/{total}",
+    "lessonCounter": "Lesson {current} of {total}",
+    "completedAll": "All lessons are completed",
+    "completedCurrent": "Lesson completed. The next lesson will open in the menu after the current one is finished.",
+    "completeHint": "To mark a lesson as completed, confirm you reviewed it and wait for the timer.",
+    "acknowledge": "I have reviewed this lesson",
+    "waitMore": "Wait {seconds} sec more.",
+    "timerDone": "Timer finished. You can complete the lesson.",
+    "loading": "Please wait...",
+    "markComplete": "Mark lesson as completed",
+    "errors": {
+      "completeFailed": "Failed to mark lesson as completed"
+    }
+  },
   "footer": {
     "tagline": "A digital platform for businesses and users",
     "faq": "FAQ",

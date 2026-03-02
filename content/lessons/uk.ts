@@ -1,4 +1,4 @@
-export type LessonContent = { id: number; title: string; body: string };
+import type { LessonContent } from "./types";
 
 export const LESSONS_UK: LessonContent[] = [
   {

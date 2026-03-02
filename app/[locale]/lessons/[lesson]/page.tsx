@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
-import { LESSONS_UK } from "@/content/lessons/uk";
+import { getLessonsByLocale } from "@/content/lessons";
 import CompleteLessonButton from "../ui/CompleteLessonButton";
 import Reveal from "@/components/animation/Reveal";
 
@@ -13,6 +14,8 @@ export default async function LessonPage({
 }) {
   const { locale, lesson } = await params;
   const lessonNumber = Number(lesson);
+  const t = await getTranslations({ locale, namespace: "lessons" });
+  const lessons = getLessonsByLocale(locale);
 
   if (!Number.isInteger(lessonNumber) || lessonNumber < 1) {
     notFound();
@@ -34,7 +37,7 @@ export default async function LessonPage({
   const isPaid = la?.status === "ACTIVE" && !!la?.paidAt;
   if (!isPaid || !la?.profileConfirmedAt) redirect(`/${locale}/school`);
 
-  const totalLessons = LESSONS_UK.length;
+  const totalLessons = lessons.length;
   const completedLessons = la?.completedLessons ?? 0;
   const unlockedMax = Math.min(completedLessons + 1, totalLessons);
 
@@ -42,7 +45,7 @@ export default async function LessonPage({
     redirect(`/${locale}/lessons/${unlockedMax}`);
   }
 
-  const lessonContent = LESSONS_UK.find((item) => item.id === lessonNumber);
+  const lessonContent = lessons.find((item) => item.id === lessonNumber);
   if (!lessonContent) notFound();
 
   const isCompleted = lessonNumber <= completedLessons;
@@ -82,7 +85,11 @@ export default async function LessonPage({
     if (
       /^\d+\.\s+/.test(text) ||
       /^Крок\s+\d+/i.test(text) ||
+      /^Step\s+\d+/i.test(text) ||
+      /^Étape\s+\d+/i.test(text) ||
       /^Рівень\s+\d+/i.test(text) ||
+      /^Level\s+\d+/i.test(text) ||
+      /^Niveau\s+\d+/i.test(text) ||
       text.endsWith(":")
     ) {
       blocks.push({ type: "subheading", text });
@@ -104,9 +111,11 @@ export default async function LessonPage({
       <div className="grid gap-6 lg:grid-cols-[260px_1fr]">
         <Reveal variant="block" className="h-fit">
           <aside className="lesson-card lesson-animate lesson-delay-1 h-fit rounded-2xl border border-black/10 bg-white p-4">
-            <p className="text-sm font-semibold text-(--text-muted)">Уроки</p>
+            <p className="text-sm font-semibold text-(--text-muted)">
+              {t("sidebarTitle")}
+            </p>
             <nav className="mt-3 flex flex-col gap-2">
-              {LESSONS_UK.map((item) => {
+              {lessons.map((item) => {
                 const locked = item.id > unlockedMax;
                 const active = item.id === lessonNumber;
                 const isDone = item.id <= completedLessons;
@@ -149,7 +158,10 @@ export default async function LessonPage({
               })}
             </nav>
             <div className="mt-4 text-xs text-(--text-muted)">
-              Прогрес: {completedLessons}/{totalLessons}
+              {t("progress", {
+                completed: completedLessons,
+                total: totalLessons,
+              })}
             </div>
           </aside>
         </Reveal>
@@ -161,7 +173,10 @@ export default async function LessonPage({
                 {lessonContent.title}
               </h1>
               <span className="text-sm text-(--text-muted)">
-                Урок {lessonNumber} з {totalLessons}
+                {t("lessonCounter", {
+                  current: lessonNumber,
+                  total: totalLessons,
+                })}
               </span>
             </div>
 
