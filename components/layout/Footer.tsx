@@ -6,7 +6,6 @@ import { Container } from "@/components/ui/Container";
 import { Link as LocalizedLink } from "@/navigation";
 
 const SITE = {
-  brand: "AvenEzer",
   domain: "www.avenezer.ink",
   email: "info@avenezer.ink",
 };
@@ -58,9 +57,10 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="text-xs uppercase tracking-[0.3em] opacity-70">
-          {SITE.brand} © {new Date().getFullYear()}
-        </p>
+        <div className="space-y-1 text-xs opacity-70 sm:text-right">
+          <p>© 2026 AvenEzer Inc. All rights reserved.</p>
+          <p>AvenEzer™ and Aver™ are trademarks of AvenEzer Inc.</p>
+        </div>
       </Container>
     </footer>
   );
