@@ -59,7 +59,7 @@ export function Footer() {
 
         <div className="space-y-1 text-xs opacity-70 sm:text-right">
           <p>© 2026 AvenEzer Inc. All rights reserved.</p>
-          <p>AvenEzer™ and Aver™ are trademarks of AvenEzer Inc.</p>
+          <p>AvenEzer™ is a trademark of AvenEzer Inc.</p>
         </div>
       </Container>
     </footer>

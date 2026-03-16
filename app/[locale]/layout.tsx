@@ -6,6 +6,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { RoutePhoto } from "@/components/layout/RoutePhoto";
 import { locales } from "@/i18n";
 import GlobalAnimatedBackground from "@/components/animation/GlobalAnimatedBackground";
 import PageTransition from "@/components/animation/PageTransition";
@@ -55,6 +56,7 @@ export default async function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">
+              <RoutePhoto />
               <PageTransition>{children}</PageTransition>
             </main>
             <Footer />

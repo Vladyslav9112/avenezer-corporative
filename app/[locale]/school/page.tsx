@@ -38,6 +38,15 @@ export default async function SchoolPage({
             Школа AVER
           </h1>
 
+          <div className="mt-4 overflow-hidden rounded-2xl border border-black/10">
+            <img
+              src="/platform-hero.jpg"
+              alt="AvenEzer School learning environment"
+              loading="lazy"
+              className="h-52 w-full object-cover sm:h-72"
+            />
+          </div>
+
           <div className="mt-4 grid gap-3 md:grid-cols-2">
             <Reveal variant="block">
               <div className="rounded-2xl border border-black/10 bg-white p-4">

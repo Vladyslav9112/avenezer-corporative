@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
 import { mailer, getFromEmail } from "@/lib/mail";
@@ -70,7 +71,8 @@ export async function POST(req: Request) {
     }
 
     // 2) Зберігаємо дані + підтвердження
-    const updatedUser = await prisma.$transaction(async (tx) => {
+    const updatedUser = await prisma.$transaction(
+      async (tx: Prisma.TransactionClient) => {
       const u = await tx.user.update({
         where: { id: sessionUser.id },
         data: { name, telegram },
@@ -83,7 +85,8 @@ export async function POST(req: Request) {
       });
 
       return u;
-    });
+      },
+    );
 
     // 3) Надсилаємо лист адміну
     const notifyTo = process.env.LESSONS_NOTIFY_EMAIL;
