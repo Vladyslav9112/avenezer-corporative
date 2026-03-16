@@ -1,9 +1,8 @@
 {
   "layout": {
-    "title": "AvenEzer™",
-    "description": "AvenEzer™ est une plateforme numérique internationale."
+    "title": "AvenEzer",
+    "description": "AvenEzer est une plateforme numérique internationale."
   },
-
   "nav": {
     "home": "Accueil",
     "about": "À propos",
@@ -15,22 +14,21 @@
     "menu": "Menu",
     "language": "Langue"
   },
-
   "home": {
     "meta": {
-      "title": "AvenEzer™ — Accueil",
-      "description": "AvenEzer™ est une plateforme numérique internationale pour les entreprises, les Avers et les communautés."
+      "title": "AvenEzer — Accueil",
+      "description": "AvenEzer est une plateforme numérique internationale pour les entreprises, les Avers et les communautés."
     },
     "hero": {
       "eyebrow": "ACCUEIL",
       "title": "AvenEzer™ — un écosystème d'affaires, de partenariats et de soutien",
-      "subtitle": "AvenEzer™ est une entreprise canadienne qui construit une plateforme numérique internationale pour les entreprises et les organisations à but non lucratif. Le nom signifie « pierre d'aide » — un symbole de force et de responsabilité partagées. Nous créons un environnement où la croissance des entreprises est combinée à la valeur sociale."
+      "subtitle": "AvenEzer est une entreprise canadienne qui construit une plateforme numérique internationale pour les entreprises et les organisations à but non lucratif. Le nom signifie « pierre d'aide » — un symbole de force et de responsabilité partagées. Nous créons un environnement où la croissance des entreprises est combinée à la valeur sociale."
     },
     "sections": {
       "platformToday": {
         "title": "La plateforme aujourd’hui",
         "paragraphs": [
-          "À ce jour, AvenEzer™ fonctionne sous la forme d’une plateforme web MVP.",
+          "À ce jour, AvenEzer fonctionne sous la forme d’une plateforme web MVP.",
           "Le MVP permet de :"
         ],
         "bullets": [
@@ -49,7 +47,7 @@
       "nextStage": {
         "title": "Prochaine étape",
         "paragraphs": [
-          "La prochaine étape du développement d’AvenEzer™ est une application mobile, qui élargira l’accès à la plateforme et rendra l’utilisation plus pratique pour les entreprises et les utilisateurs.",
+          "La prochaine étape du développement d’AvenEzer est une application mobile, qui élargira l’accès à la plateforme et rendra l’utilisation plus pratique pour les entreprises et les utilisateurs.",
           "L’application mobile est en phase de planification et de développement. Les fonctionnalités et le calendrier de lancement sont définis progressivement."
         ]
       },
@@ -58,14 +56,14 @@
         "business": {
           "title": "Pour les entreprises",
           "paragraphs": [
-            "AvenEzer™ aide les entreprises locales et internationales à gagner en visibilité,",
+            "AvenEzer aide les entreprises locales et internationales à gagner en visibilité,",
             "à attirer des clients et à se préparer à une présence complète dans l’application mobile."
           ]
         },
         "avers": {
           "title": "Pour les Avers (partenaires de la plateforme)",
           "paragraphs": [
-            "Un Aver™ est un partenaire d’AvenEzer™ qui intègre des entreprises à la plateforme et à l’application mobile,",
+            "Un Aver est un partenaire d’AvenEzer qui intègre des entreprises à la plateforme et à l’application mobile,",
             "aide l’écosystème à grandir et reçoit une récompense pour sa participation.",
             "Les Avers sont un maillon clé entre la plateforme et les entreprises dans les villes et les pays."
           ]
@@ -80,15 +78,15 @@
         "nonprofit": {
           "title": "Pour les associations et initiatives sociales",
           "paragraphs": [
-            "À l’avenir, AvenEzer™ prévoit de soutenir les organisations à but non lucratif et les projets sociaux,",
+            "À l’avenir, AvenEzer prévoit de soutenir les organisations à but non lucratif et les projets sociaux,",
             "en leur offrant de la visibilité, un accès à la communauté et une place dans un écosystème mondial de confiance."
           ]
         }
       },
       "ecosystem": {
-        "title": "L’écosystème AvenEzer™",
+        "title": "L’écosystème AvenEzer",
         "paragraphs": [
-          "AvenEzer™ est un écosystème où les entreprises gagnent en visibilité,",
+          "AvenEzer est un écosystème où les entreprises gagnent en visibilité,",
           "les Avers obtiennent des opportunités de développement et de revenus,",
           "les utilisateurs accèdent facilement aux services,",
           "et les associations disposent d’un espace de soutien et de collaboration."
@@ -102,16 +100,15 @@
       }
     }
   },
-
   "about": {
     "meta": {
-      "title": "AvenEzer™ — À propos",
-      "description": "À propos d’AvenEzer™ : mission, approche de développement et principes de construction d’un écosystème numérique international."
+      "title": "AvenEzer — À propos",
+      "description": "À propos d’AvenEzer : mission, approche de développement et principes de construction d’un écosystème numérique international."
     },
     "hero": {
       "eyebrow": "À PROPOS",
       "title": "À propos de l’entreprise",
-      "subtitle": "AvenEzer™ se développe comme un écosystème numérique international qui relie les entreprises, les partenaires Aver™ et les utilisateurs au sein d’une structure unique — avec un focus sur la confiance, des règles claires et un développement progressif."
+      "subtitle": "AvenEzer se développe comme un écosystème numérique international qui relie les entreprises, les partenaires Aver et les utilisateurs au sein d’une structure unique — avec un focus sur la confiance, des règles claires et un développement progressif."
     },
     "sections": {
       "aboutCompany": {
@@ -123,7 +120,7 @@
         ]
       },
       "mission": {
-        "title": "Mission d’AvenEzer™",
+        "title": "Mission d’AvenEzer",
         "paragraphs": [
           "Notre mission est de créer une plateforme moderne qui simplifie les interactions entre les entreprises et les utilisateurs,",
           "et de poser les bases d’un écosystème mondial de confiance et de collaboration."
@@ -132,7 +129,7 @@
       "approach": {
         "title": "Approche de développement",
         "paragraphs": [
-          "AvenEzer™ se développe par étapes. Nous privilégions la solidité du socle plutôt que des promesses trop ambitieuses."
+          "AvenEzer se développe par étapes. Nous privilégions la solidité du socle plutôt que des promesses trop ambitieuses."
         ],
         "bullets": [
           "architecture stable et logique d’utilisation claire,",
@@ -144,73 +141,72 @@
       "faqLink": "Questions fréquentes"
     }
   },
-
   "faq": {
     "meta": {
-      "title": "AvenEzer™ — FAQ",
-      "description": "Réponses aux questions fréquentes sur AvenEzer™, le programme Aver™, l’application AvenEzer™ et Aver™ School."
+      "title": "AvenEzer — FAQ",
+      "description": "Réponses aux questions fréquentes sur AvenEzer, le programme Aver, l’application AvenEzer et Aver School."
     },
     "hero": {
       "eyebrow": "FAQ",
       "title": "Questions fréquentes",
-      "subtitle": "Informations clés sur la plateforme AvenEzer™, le programme Aver™ et l’application AvenEzer™ sous forme de réponses claires et concises."
+      "subtitle": "Informations clés sur la plateforme AvenEzer, le programme Aver et l’application AvenEzer sous forme de réponses claires et concises."
     },
     "sections": {
       "general": {
-        "title": "AvenEzer™ — questions générales",
+        "title": "AvenEzer — questions générales",
         "items": [
           {
-            "q": "Peut-on gagner avec AvenEzer™ ?",
+            "q": "Peut-on gagner avec AvenEzer ?",
             "a": [
-              "Oui. AvenEzer™ est une plateforme numérique partenariale où les Avers reçoivent une rémunération pour l’intégration d’entreprises et le développement de la plateforme."
+              "Oui. AvenEzer est une plateforme numérique partenariale où les Avers reçoivent une rémunération pour l’intégration d’entreprises et le développement de la plateforme."
             ],
             "bullets": [
-              "Un Aver™ n’est pas un employé de l’entreprise.",
-              "Un Aver™ n’est pas un agent commercial classique.",
-              "Un Aver™ ne fait pas partie d’un système MLM."
+              "Un Aver n’est pas un employé de l’entreprise.",
+              "Un Aver n’est pas un agent commercial classique.",
+              "Un Aver ne fait pas partie d’un système MLM."
             ]
           },
           {
-            "q": "AvenEzer™ est-il un MLM ?",
+            "q": "AvenEzer est-il un MLM ?",
             "a": [
-              "Non. AvenEzer™ est une plateforme numérique partenariale, et non un système de marketing de réseau (MLM).",
+              "Non. AvenEzer est une plateforme numérique partenariale, et non un système de marketing de réseau (MLM).",
               "Les Avers sont des partenaires indépendants qui contribuent à la croissance de la plateforme."
             ]
           }
         ]
       },
       "app": {
-        "title": "Application AvenEzer™",
+        "title": "Application AvenEzer",
         "items": [
           {
-            "q": "Qu’est-ce que l’application AvenEzer™ ?",
+            "q": "Qu’est-ce que l’application AvenEzer ?",
             "a": [
-              "L’application AvenEzer™ est une application mobile développée par AvenEzer™ Inc.",
+              "L’application AvenEzer est une application mobile développée par AvenEzer Inc.",
               "Elle fera partie de la plateforme et élargira les possibilités pour les entreprises et les utilisateurs."
             ]
           },
           {
-            "q": "En quoi l’application AvenEzer™ est-elle différente de Google Maps ?",
+            "q": "En quoi l’application AvenEzer est-elle différente de Google Maps ?",
             "a": [
-              "L’application AvenEzer™ n’est pas qu’une carte. C’est un écosystème qui relie entreprises, partenaires Aver™, utilisateurs, communautés et initiatives sociales."
+              "L’application AvenEzer n’est pas qu’une carte. C’est un écosystème qui relie entreprises, partenaires Aver, utilisateurs, communautés et initiatives sociales."
             ]
           }
         ]
       },
       "nonprofit": {
-        "title": "AvenEzer™ et les organisations à but non lucratif",
+        "title": "AvenEzer et les organisations à but non lucratif",
         "items": [
           {
-            "q": "AvenEzer™ travaille-t-il avec des organisations non lucratives ?",
+            "q": "AvenEzer travaille-t-il avec des organisations non lucratives ?",
             "a": [
-              "AvenEzer™ prévoit de soutenir les organisations non lucratives et les initiatives sociales dans les futures versions de la plateforme et de l’application.",
+              "AvenEzer prévoit de soutenir les organisations non lucratives et les initiatives sociales dans les futures versions de la plateforme et de l’application.",
               "Ces organisations pourront gagner en visibilité et faire partie d’un écosystème mondial de confiance."
             ]
           },
           {
-            "q": "AvenEzer™ est-il uniquement un projet commercial ?",
+            "q": "AvenEzer est-il uniquement un projet commercial ?",
             "a": [
-              "Non. AvenEzer™ combine un modèle économique avec une mission sociale et communautaire."
+              "Non. AvenEzer combine un modèle économique avec une mission sociale et communautaire."
             ]
           }
         ]
@@ -219,9 +215,9 @@
         "title": "Informations complémentaires",
         "items": [
           {
-            "q": "Dans quels pays AvenEzer™ est-il présent ?",
+            "q": "Dans quels pays AvenEzer est-il présent ?",
             "a": [
-              "AvenEzer™ a un format international et est conçu pour fonctionner dans différents pays et villes."
+              "AvenEzer a un format international et est conçu pour fonctionner dans différents pays et villes."
             ]
           },
           {
@@ -231,33 +227,33 @@
             ]
           },
           {
-            "q": "Comment fonctionne l’écosystème AvenEzer™ ?",
+            "q": "Comment fonctionne l’écosystème AvenEzer ?",
             "a": [
               "L’écosystème fonctionne grâce à l’interaction coordonnée entre entreprises, partenaires et utilisateurs."
             ],
             "bullets": [
               "Une entreprise crée un profil et présente ses services.",
-              "Les partenaires Aver™ aident à connecter les entreprises à l’écosystème.",
+              "Les partenaires Aver aident à connecter les entreprises à l’écosystème.",
               "Les utilisateurs trouvent des entreprises et des services dans le catalogue.",
               "L’écosystème se développe grâce aux liens professionnels et à la collaboration."
             ]
           },
           {
-            "q": "Qui sont les participants de l’écosystème AvenEzer™ ?",
+            "q": "Qui sont les participants de l’écosystème AvenEzer ?",
             "a": [
-              "L’écosystème réunit des entreprises, des organisations à but non lucratif, des partenaires Aver™ et des utilisateurs."
+              "L’écosystème réunit des entreprises, des organisations à but non lucratif, des partenaires Aver et des utilisateurs."
             ],
             "bullets": [
               "Entreprises : créent un profil, présentent leurs services et rejoignent un réseau international.",
               "Organisations à but non lucratif : obtiennent plus de visibilité et des opportunités de trouver des partenaires et des sponsors.",
-              "Partenaires Aver™ : connectent les entreprises à la plateforme, développent des communautés d’affaires locales et construisent des réseaux professionnels.",
+              "Partenaires Aver : connectent les entreprises à la plateforme, développent des communautés d’affaires locales et construisent des réseaux professionnels.",
               "Utilisateurs : découvrent des entreprises et des services, trouvent de nouveaux acteurs et utilisent les services disponibles."
             ]
           },
           {
-            "q": "Pourquoi choisir AvenEzer™ ?",
+            "q": "Pourquoi choisir AvenEzer ?",
             "a": [
-              "AvenEzer™ combine une portée internationale, des profils d’entreprises réels et une plateforme numérique de nouvelle génération."
+              "AvenEzer combine une portée internationale, des profils d’entreprises réels et une plateforme numérique de nouvelle génération."
             ],
             "bullets": [
               "Réseau d’affaires international.",
@@ -269,40 +265,40 @@
         ]
       },
       "averProgram": {
-        "title": "Programme Aver™",
+        "title": "Programme Aver",
         "items": [
           {
             "q": "Qui sont les Avers ?",
             "a": [
-              "Un Aver™ est un partenaire indépendant de la plateforme AvenEzer™ Inc., une société canadienne qui développe un écosystème numérique international pour les entreprises, les utilisateurs et les communautés.",
-              "Les Avers aident les entreprises à rejoindre la plateforme AvenEzer™ et à se préparer à leur présence dans l’application mobile."
+              "Un Aver est un partenaire indépendant de la plateforme AvenEzer Inc., une société canadienne qui développe un écosystème numérique international pour les entreprises, les utilisateurs et les communautés.",
+              "Les Avers aident les entreprises à rejoindre la plateforme AvenEzer et à se préparer à leur présence dans l’application mobile."
             ]
           },
           {
-            "q": "Qu’est-ce que le programme Aver™ ?",
+            "q": "Qu’est-ce que le programme Aver ?",
             "a": [
-              "Le programme Aver™ est le programme partenarial d’AvenEzer™ Inc. qui permet de participer au développement de la plateforme, d’intégrer des entreprises à l’écosystème et de recevoir une rémunération pour sa contribution.",
-              "Le programme Aver™ n’est ni un emploi ni un modèle de vente classique."
+              "Le programme Aver est le programme partenarial d’AvenEzer Inc. qui permet de participer au développement de la plateforme, d’intégrer des entreprises à l’écosystème et de recevoir une rémunération pour sa contribution.",
+              "Le programme Aver n’est ni un emploi ni un modèle de vente classique."
             ]
           },
           {
-            "q": "Que fait un Aver™ ?",
+            "q": "Que fait un Aver ?",
             "a": [
-              "Un Aver™ présente la plateforme AvenEzer™ aux entreprises, explique ses possibilités, aide les entreprises à rejoindre l’écosystème et contribue au développement local de la plateforme.",
+              "Un Aver présente la plateforme AvenEzer aux entreprises, explique ses possibilités, aide les entreprises à rejoindre l’écosystème et contribue au développement local de la plateforme.",
               "Les Avers sont un maillon clé entre la plateforme et les entreprises locales."
             ]
           },
           {
-            "q": "Peut-on gagner dans le programme Aver™ ?",
+            "q": "Peut-on gagner dans le programme Aver ?",
             "a": [
-              "Oui. Les Avers reçoivent une rémunération pour l’intégration d’entreprises et leur participation au développement de la plateforme AvenEzer™.",
+              "Oui. Les Avers reçoivent une rémunération pour l’intégration d’entreprises et leur participation au développement de la plateforme AvenEzer.",
               "Le format de rémunération dépend des conditions du programme et de l’étape de développement de la plateforme."
             ]
           },
           {
-            "q": "Un Aver™ est-il un employé de l’entreprise ?",
+            "q": "Un Aver est-il un employé de l’entreprise ?",
             "a": [
-              "Non. Un Aver™ est un partenaire indépendant et non un employé d’AvenEzer™ Inc."
+              "Non. Un Aver est un partenaire indépendant et non un employé d’AvenEzer Inc."
             ],
             "bullets": [
               "Aucune relation de travail salarié avec l’entreprise.",
@@ -311,64 +307,64 @@
             ]
           },
           {
-            "q": "Le programme Aver™ est-il du marketing de réseau (MLM) ?",
+            "q": "Le programme Aver est-il du marketing de réseau (MLM) ?",
             "a": [
-              "Non. Le programme Aver™ est un programme numérique partenarial, pas un système MLM.",
+              "Non. Le programme Aver est un programme numérique partenarial, pas un système MLM.",
               "Les Avers ne vendent pas de produits et n’achètent pas de packs obligatoires."
             ]
           },
           {
-            "q": "À qui s’adresse le programme Aver™ ?",
+            "q": "À qui s’adresse le programme Aver ?",
             "a": [
-              "Le programme Aver™ convient aux personnes vivant dans différents pays et villes, ayant des contacts avec des entreprises locales, souhaitant participer au développement d’une plateforme numérique, recherchant un format partenarial flexible et voulant rejoindre un projet international dès le départ."
+              "Le programme Aver convient aux personnes vivant dans différents pays et villes, ayant des contacts avec des entreprises locales, souhaitant participer au développement d’une plateforme numérique, recherchant un format partenarial flexible et voulant rejoindre un projet international dès le départ."
             ]
           },
           {
-            "q": "Dans quels pays peut-on devenir Aver™ ?",
+            "q": "Dans quels pays peut-on devenir Aver ?",
             "a": [
-              "Le programme Aver™ a un format international. Les Avers peuvent rejoindre depuis différents pays et développer la plateforme localement."
+              "Le programme Aver a un format international. Les Avers peuvent rejoindre depuis différents pays et développer la plateforme localement."
             ]
           },
           {
-            "q": "Comment devenir Aver™ ?",
+            "q": "Comment devenir Aver ?",
             "a": [
-              "Pour devenir Aver™ : découvrez la plateforme AvenEzer™, envoyez une demande de participation, obtenez l’accès aux supports et aux instructions, puis commencez à intégrer des entreprises à l’écosystème."
+              "Pour devenir Aver : découvrez la plateforme AvenEzer, envoyez une demande de participation, obtenez l’accès aux supports et aux instructions, puis commencez à intégrer des entreprises à l’écosystème."
             ]
           },
           {
-            "q": "Programme Aver™ et application AvenEzer™",
+            "q": "Programme Aver et application AvenEzer",
             "a": [
-              "Les Avers jouent un rôle important dans la préparation des entreprises à leur présence dans l’application AvenEzer™.",
+              "Les Avers jouent un rôle important dans la préparation des entreprises à leur présence dans l’application AvenEzer.",
               "À mesure que la plateforme évolue, les opportunités pour les Avers s’élargissent avec les fonctionnalités de l’application."
             ]
           }
         ]
       },
       "averSchool": {
-        "title": "Aver™ School",
+        "title": "Aver School",
         "items": [
           {
             "q": "Existe-t-il une formation pour les Avers ?",
             "a": [
-              "Oui. Une formation est prévue pour les partenaires Aver™ afin de comprendre la plateforme AvenEzer™, le rôle d’un Aver™ et les principes de travail avec les entreprises."
+              "Oui. Une formation est prévue pour les partenaires Aver afin de comprendre la plateforme AvenEzer, le rôle d’un Aver et les principes de travail avec les entreprises."
             ]
           },
           {
-            "q": "Qu’est-ce que l’Aver™ School ?",
+            "q": "Qu’est-ce que l’Aver School ?",
             "a": [
-              "Aver™ School est un programme de formation pour les partenaires Aver™, créé par AvenEzer™ Inc."
+              "Aver School est un programme de formation pour les partenaires Aver, créé par AvenEzer Inc."
             ],
             "bullets": [
-              "aide à comprendre le fonctionnement de la plateforme AvenEzer™,",
+              "aide à comprendre le fonctionnement de la plateforme AvenEzer,",
               "apprend à présenter correctement la plateforme aux entreprises,",
-              "explique le rôle de l’Aver™ dans l’écosystème,",
+              "explique le rôle de l’Aver dans l’écosystème,",
               "permet d’agir avec confiance et méthode, même sans expérience préalable."
             ]
           },
           {
             "q": "Faut-il une expérience en vente ou en marketing ?",
             "a": [
-              "Non. Aver™ School est conçue pour être compréhensible même sans expérience en vente, marketing ou IT."
+              "Non. Aver School est conçue pour être compréhensible même sans expérience en vente, marketing ou IT."
             ]
           },
           {
@@ -380,54 +376,48 @@
           {
             "q": "Quand peut-on commencer la formation ?",
             "a": [
-              "L’accès à Aver™ School est accordé après l’adhésion au programme Aver™. La formation est en ligne et peut être suivie à son rythme."
+              "L’accès à Aver School est accordé après l’adhésion au programme Aver. La formation est en ligne et peut être suivie à son rythme."
             ]
           },
           {
             "q": "Que se passe-t-il après la formation ?",
             "a": [
-              "Après la formation, l’Aver™ comprend le fonctionnement de l’écosystème AvenEzer™, sait intégrer des entreprises à la plateforme et peut commencer une participation concrète au développement d’AvenEzer™ dans sa ville ou son pays."
+              "Après la formation, l’Aver comprend le fonctionnement de l’écosystème AvenEzer, sait intégrer des entreprises à la plateforme et peut commencer une participation concrète au développement d’AvenEzer dans sa ville ou son pays."
             ]
           }
         ]
       }
     }
   },
-
   "avers": {
     "meta": {
-      "title": "AvenEzer™ — Avers",
-      "description": "Qui sont les Avers, comment ils contribuent à l’écosystème AvenEzer™ et leur rôle dans l’intégration des entreprises."
+      "title": "AvenEzer — Avers",
+      "description": "Qui sont les Avers, comment ils contribuent à l’écosystème AvenEzer et leur rôle dans l’intégration des entreprises."
     },
     "hero": {
       "eyebrow": "AVERS",
       "title": "Qui sont les Avers",
-      "subtitle": "Un Aver™ est un partenaire indépendant de la plateforme AvenEzer™ qui aide les entreprises à rejoindre l’écosystème, développe le réseau et reçoit une rémunération pour sa contribution."
+      "subtitle": "Un Aver est un partenaire indépendant de la plateforme AvenEzer qui aide les entreprises à rejoindre l’écosystème, développe le réseau et reçoit une rémunération pour sa contribution."
     },
     "cta": {
       "title": "Devenir AVER",
       "subtitle": "Rejoignez le programme AVER et accédez à la formation, aux outils et aux opportunités au sein de la communauté.",
-
       "button": "Devenir AVER",
-
       "cards": {
         "communityTitle": "Communauté",
         "communityText": "Réseautage, soutien et accès à de nouvelles opportunités.",
-
         "educationTitle": "Formation",
         "educationText": "Programme de l’école AVER et supports pratiques.",
-
         "trustTitle": "Confiance",
         "trustText": "Règles transparentes, responsabilité et interaction sécurisée."
       },
-
       "note": "Complétez l’inscription — nous vous contacterons et vous guiderons dans les prochaines étapes."
     },
     "sections": {
       "who": {
         "title": "Qui sont les Avers",
         "paragraphs": [
-          "Un Aver™ est un partenaire indépendant de la plateforme AvenEzer™ qui aide les entreprises à se connecter à l’écosystème,",
+          "Un Aver est un partenaire indépendant de la plateforme AvenEzer qui aide les entreprises à se connecter à l’écosystème,",
           "développe le réseau et reçoit une rémunération pour sa contribution.",
           "Les Avers constituent un maillon clé entre la plateforme et les entreprises dans les villes et les pays."
         ]
@@ -435,15 +425,15 @@
       "clarity": {
         "title": "Positionnement clair",
         "bullets": [
-          "Un Aver™ n’est pas un employé",
-          "Un Aver™ n’est pas un agent commercial",
-          "Un Aver™ est un partenaire de l’écosystème"
+          "Un Aver n’est pas un employé",
+          "Un Aver n’est pas un agent commercial",
+          "Un Aver est un partenaire de l’écosystème"
         ]
       },
       "school": {
-        "title": "AvenEzer™ School",
+        "title": "AvenEzer School",
         "paragraphs": [
-          "AvenEzer™ School est un programme de formation interne destiné à accompagner les Avers dans leur activité au sein de l’écosystème."
+          "AvenEzer School est un programme de formation interne destiné à accompagner les Avers dans leur activité au sein de l’écosystème."
         ],
         "bulletsTitle": "L’école a pour objectif de",
         "bullets": [
@@ -460,27 +450,25 @@
       }
     }
   },
-
   "connectia": {
     "meta": {
-      "title": "AvenEzer™ — Connectia Business Club",
-      "description": "Connectia Business Club est une communauté d’affaires au sein de l’écosystème AvenEzer™, dédiée aux échanges professionnels et au développement de relations d’affaires."
+      "title": "AvenEzer — Connectia Business Club",
+      "description": "Connectia Business Club est une communauté d’affaires au sein de l’écosystème AvenEzer, dédiée aux échanges professionnels et au développement de relations d’affaires."
     },
     "hero": {
       "eyebrow": "CONNECTIA BUSINESS CLUB",
       "title": "Connectia Business Club",
-      "subtitle": "Connectia Business Club est une communauté d’affaires au sein de l’écosystème AvenEzer™, créée pour les échanges professionnels, le partage d’expérience et la construction de relations d’affaires."
+      "subtitle": "Connectia Business Club est une communauté d’affaires au sein de l’écosystème AvenEzer, créée pour les échanges professionnels, le partage d’expérience et la construction de relations d’affaires."
     },
     "sections": {
       "part": {
         "title": "Une partie de l’écosystème",
         "paragraphs": [
-          "Le club fait partie de l’écosystème AvenEzer™ et se développe comme une direction distincte."
+          "Le club fait partie de l’écosystème AvenEzer et se développe comme une direction distincte."
         ]
       }
     }
   },
-
   "contact": {
     "form": {
       "fields": {
@@ -501,8 +489,8 @@
       }
     },
     "meta": {
-      "title": "AvenEzer™ — Contact",
-      "description": "Informations de contact d’AvenEzer™ pour les demandes générales et les partenariats."
+      "title": "AvenEzer — Contact",
+      "description": "Informations de contact d’AvenEzer pour les demandes générales et les partenariats."
     },
     "hero": {
       "eyebrow": "CONTACT",
@@ -512,7 +500,10 @@
     "sections": {
       "details": {
         "title": "Contact",
-        "bullets": ["Email : info@avenezer.ink", "Site web : www.avenezer.ink"]
+        "bullets": [
+          "Email : info@avenezer.ink",
+          "Site web : www.avenezer.ink"
+        ]
       },
       "form": {
         "title": "Formulaire de contact",
@@ -522,13 +513,13 @@
   },
   "platform": {
     "meta": {
-      "title": "AvenEzer™ — Plateforme MVP",
-      "description": "Présentation de la plateforme web MVP d’AvenEzer™ : ce qui est disponible aujourd’hui, comment l’utiliser et comment la plateforme va évoluer."
+      "title": "AvenEzer — Plateforme MVP",
+      "description": "Présentation de la plateforme web MVP d’AvenEzer : ce qui est disponible aujourd’hui, comment l’utiliser et comment la plateforme va évoluer."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP",
-      "title": "Plateforme web MVP AvenEzer™",
-      "subtitle": "Le MVP est la première version fonctionnelle d’AvenEzer™. Il est conçu pour tester l’approche, la structure et les interactions au sein de l’écosystème — sans promesses excessives et avec un développement progressif."
+      "title": "Plateforme web MVP AvenEzer",
+      "subtitle": "Le MVP est la première version fonctionnelle d’AvenEzer. Il est conçu pour tester l’approche, la structure et les interactions au sein de l’écosystème — sans promesses excessives et avec un développement progressif."
     },
     "sections": {
       "purpose": {
@@ -541,7 +532,7 @@
       "how": {
         "title": "Comment utiliser la plateforme",
         "paragraphs": [
-          "La plateforme est disponible pour les entreprises et les utilisateurs qui souhaitent découvrir AvenEzer™ et rejoindre l’écosystème dès ses débuts."
+          "La plateforme est disponible pour les entreprises et les utilisateurs qui souhaitent découvrir AvenEzer et rejoindre l’écosystème dès ses débuts."
         ],
         "bullets": [
           "consulter des profils d’entreprise et la structure de base de l’annuaire,",
@@ -560,20 +551,15 @@
   "auth": {
     "loginTitle": "Connexion",
     "registerTitle": "Créer un compte",
-
     "email": "Email",
     "password": "Mot de passe",
     "passwordRepeat": "Répéter le mot de passe",
-
     "loginBtn": "Se connecter",
     "registerBtn": "Créer un compte",
-
     "loginLink": "J’ai déjà un compte",
     "registerLink": "Créer un compte",
     "forgot": "Mot de passe oublié ?",
-
     "loading": "Chargement...",
-
     "errors": {
       "invalidEmail": "Adresse email invalide",
       "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères",
@@ -616,7 +602,7 @@
     }
   },
   "footer": {
-    "tagline": "Une plateforme numérique pour les entreprises et les utilisateurs",
+    "tagline": "AvenEzer™ - Une plateforme numérique pour les entreprises et les utilisateurs",
     "faq": "FAQ",
     "terms": "Conditions d'utilisation",
     "legal": "Politiques légales"
