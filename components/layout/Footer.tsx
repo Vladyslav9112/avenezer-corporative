@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Link as LocalizedLink } from "@/navigation";
 
 const SITE = {
-  phone: "382-577-1006",
+  phone: "+1 382-577-1006",
   email: "info@avenezer.ca",
 };
 
@@ -21,7 +21,7 @@ export function Footer() {
 
           <div className="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
-              href={`tel:${SITE.phone.replace(/-/g, "")}`}
+              href={`tel:${SITE.phone.replace(/[^\d+]/g, "")}`}
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
               {SITE.phone}

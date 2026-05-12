@@ -62,8 +62,8 @@ export default function LegalPoliciesPage() {
               <p className="font-semibold text-[var(--text-main)]">
                 Contact Phone:
               </p>
-              <a href="tel:3825771006" className="opacity-80">
-                382-577-1006
+              <a href="tel:+13825771006" className="opacity-80">
+                +1 382-577-1006
               </a>
             </div>
 

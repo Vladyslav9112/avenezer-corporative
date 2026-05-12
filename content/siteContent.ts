@@ -35,7 +35,7 @@ export const SITE = {
   brand: "AvenEzer",
   tagline: "Цифрова платформа для бізнесів i користувачів",
   domain: "www.avenezer.ink",
-  phone: "382-577-1006",
+  phone: "+1 382-577-1006",
   email: "info@avenezer.ca",
 };
 
@@ -294,7 +294,7 @@ export const PAGES: Record<
         title: "Звʼязок",
         bulletBlocks: [
           {
-            bullets: [`Phone: 382-577-1006`, `Email: info@avenezer.ca`],
+            bullets: [`Phone: +1 382-577-1006`, `Email: info@avenezer.ca`],
           },
         ],
       },
