@@ -60,10 +60,19 @@ export default function LegalPoliciesPage() {
 
             <div className="mt-4">
               <p className="font-semibold text-[var(--text-main)]">
+                Contact Phone:
+              </p>
+              <a href="tel:3825771006" className="opacity-80">
+                382-577-1006
+              </a>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold text-[var(--text-main)]">
                 Contact Email:
               </p>
-              <a href="mailto:info@avenezer.ink" className="opacity-80">
-                info@avenezer.ink
+              <a href="mailto:info@avenezer.ca" className="opacity-80">
+                info@avenezer.ca
               </a>
             </div>
           </div>

@@ -6,8 +6,8 @@ import { Container } from "@/components/ui/Container";
 import { Link as LocalizedLink } from "@/navigation";
 
 const SITE = {
-  domain: "www.avenezer.ink",
-  email: "info@avenezer.ink",
+  phone: "382-577-1006",
+  email: "info@avenezer.ca",
 };
 
 export function Footer() {
@@ -21,17 +21,17 @@ export function Footer() {
 
           <div className="flex flex-col gap-1 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
+              href={`tel:${SITE.phone.replace(/-/g, "")}`}
+              className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
+            >
+              {SITE.phone}
+            </Link>
+
+            <Link
               href={`mailto:${SITE.email}`}
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
               {SITE.email}
-            </Link>
-
-            <Link
-              href={`https://${SITE.domain}`}
-              className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
-            >
-              {SITE.domain}
             </Link>
 
             <LocalizedLink
