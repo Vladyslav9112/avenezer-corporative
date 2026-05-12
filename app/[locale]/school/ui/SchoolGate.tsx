@@ -30,20 +30,6 @@ export default function SchoolGate(props: {
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState<string | null>(null);
 
-  async function devPay() {
-    setErr(null);
-    setLoading(true);
-    try {
-      const res = await fetch("/api/lessons/dev-mark-paid", { method: "POST" });
-      const data = await res.json();
-      if (!res.ok || !data.ok) throw new Error(data.error || "Payment failed");
-      window.location.reload();
-    } catch (e: any) {
-      setErr(e?.message ?? "Payment failed");
-      setLoading(false);
-    }
-  }
-
   async function saveProfile(e: React.FormEvent) {
     e.preventDefault();
     setErr(null);
@@ -57,8 +43,9 @@ export default function SchoolGate(props: {
       const data = await res.json();
       if (!res.ok || !data.ok) throw new Error(data.error || "Save failed");
       window.location.reload();
-    } catch (e: any) {
-      setErr(e?.message ?? "Save failed");
+    } catch (e: unknown) {
+      const message = e instanceof Error ? e.message : "Save failed";
+      setErr(message);
       setLoading(false);
     }
   }
@@ -78,10 +65,7 @@ export default function SchoolGate(props: {
 
         <div className="mt-4">
           <PayPalProvider>
-            <PayPalLessonButton
-              amount="10.00"
-              onPaid={() => window.location.reload()}
-            />
+            <PayPalLessonButton onPaid={() => window.location.reload()} />
           </PayPalProvider>
         </div>
       </div>

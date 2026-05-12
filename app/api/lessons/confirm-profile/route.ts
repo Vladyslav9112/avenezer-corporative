@@ -3,6 +3,7 @@ import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
 import { mailer, getFromEmail } from "@/lib/mail";
+import { LESSONS_PAYMENT_LABEL } from "@/lib/paymentConfig";
 
 export const runtime = "nodejs";
 
@@ -109,7 +110,7 @@ export async function POST(req: Request) {
       minute: "2-digit",
     });
 
-    const subject = `AvenEzer School: Lessons purchased ($10) — ${updatedUser.email}`;
+    const subject = `AvenEzer School: Lessons purchased (${LESSONS_PAYMENT_LABEL}) — ${updatedUser.email}`;
 
     const email = updatedUser.email;
     const provider = la?.provider ?? "PAYPAL";
@@ -220,7 +221,7 @@ export async function POST(req: Request) {
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;border-spacing:0 10px;">
                       <tr>
                         <td style="width:140px;font-size:12px;color:#444444;opacity:.9;">Сума</td>
-                        <td style="font-size:14px;font-weight:700;color:#222;">10.00 USD</td>
+                        <td style="font-size:14px;font-weight:700;color:#222;">${LESSONS_PAYMENT_LABEL}</td>
                       </tr>
                       <tr>
                         <td style="width:140px;font-size:12px;color:#444444;opacity:.9;">Статус</td>

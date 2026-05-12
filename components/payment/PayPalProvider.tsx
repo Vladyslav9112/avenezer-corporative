@@ -1,6 +1,7 @@
 "use client";
 
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { LESSONS_PAYMENT_CURRENCY } from "@/lib/paymentConfig";
 
 export function PayPalProvider({ children }: { children: React.ReactNode }) {
   const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
@@ -18,7 +19,7 @@ export function PayPalProvider({ children }: { children: React.ReactNode }) {
     <PayPalScriptProvider
       options={{
         clientId,
-        currency: "CAD",
+        currency: LESSONS_PAYMENT_CURRENCY,
         intent: "capture",
       }}
     >

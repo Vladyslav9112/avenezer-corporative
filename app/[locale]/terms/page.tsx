@@ -22,12 +22,12 @@ export default function TermsOfUsePage() {
         <div className="space-y-6 text-[var(--text-muted)]">
           <p>
             This international business directory, digital platform, and any
-            associated web or mobile applications (including the "AvenEzer App")
-            are operated by:
+            associated web or mobile applications (including the
+            &quot;AvenEzer App&quot;) are operated by:
           </p>
 
           <p className="font-semibold text-[var(--text-main)]">
-            AvenEzer Inc. (hereinafter referred to as the "Company")
+            AvenEzer Inc. (hereinafter referred to as the &quot;Company&quot;)
           </p>
 
           <ul className="list-disc space-y-1 pl-6">
@@ -89,14 +89,14 @@ export default function TermsOfUsePage() {
             <h3 className="font-semibold text-[var(--text-main)]">3.3</h3>
             <p>
               Lifetime Top Placement: The user who is the first to register
-              within their specific subcategory during the MVP stage is granted
-              an exclusive right to maintain a "Top Position" (priority
-              listing) within that section following the launch of the mobile
-              application.
+              within their specific subcategory during the MVP stage is
+              granted an exclusive right to maintain a &quot;Top
+              Position&quot; (priority listing) within that section following
+              the launch of the mobile application.
             </p>
             <p>
               This right is granted permanently (lifetime) without additional
-              fees for ranking upgrades, subject to the user's ongoing
+              fees for ranking upgrades, subject to the user&apos;s ongoing
               compliance with Platform rules and content guidelines.
             </p>
           </div>
@@ -142,17 +142,18 @@ export default function TermsOfUsePage() {
               If the User has received views, clicks to contact details, or
               inquiries from potential clients via the web version, the service
               is deemed actually rendered. In such cases, claims for a refund
-              based on the "non-launch of the app" shall not be accepted, as
-              the primary business objective (visibility) has been achieved.
+              based on the &quot;non-launch of the app&quot; shall not be
+              accepted, as the primary business objective (visibility) has been
+              achieved.
             </p>
           </div>
 
           <div className="space-y-3">
             <h3 className="font-semibold text-[var(--text-main)]">4.4</h3>
             <p>
-              Timeline Adjustments and "Silent Consent": In the event of a
-              launch delay due to technical reasons, the Company shall notify
-              users via email.
+              Timeline Adjustments and &quot;Silent Consent&quot;: In the event
+              of a launch delay due to technical reasons, the Company shall
+              notify users via email.
             </p>
             <p>
               If the User does not submit a written refund request within 14
@@ -177,9 +178,9 @@ export default function TermsOfUsePage() {
           <div className="space-y-3">
             <h3 className="font-semibold text-[var(--text-main)]">5.2</h3>
             <p>
-              Upon issuance of a refund, the "Founding Member" status and
-              "Lifetime Top Placement" rights are permanently and irrevocably
-              revoked.
+              Upon issuance of a refund, the &quot;Founding Member&quot; status
+              and &quot;Lifetime Top Placement&quot; rights are permanently and
+              irrevocably revoked.
             </p>
           </div>
         </div>
@@ -198,9 +199,9 @@ export default function TermsOfUsePage() {
           <div className="space-y-3">
             <h3 className="font-semibold text-[var(--text-main)]">6.2</h3>
             <p>
-              The "Founding Member" status is strictly a marketing privilege
-              and does not grant any rights to the management, governance, or
-              profits of the Company.
+              The &quot;Founding Member&quot; status is strictly a marketing
+              privilege and does not grant any rights to the management,
+              governance, or profits of the Company.
             </p>
           </div>
         </div>

@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { PayPalButtons } from "@paypal/react-paypal-js";
+import { LESSONS_PAYMENT_AMOUNT } from "@/lib/paymentConfig";
 
 type Props = {
-  amount?: string;
   onPaid?: () => void;
 };
 
-export function PayPalLessonButton({ amount = "0.01", onPaid }: Props) {
+export function PayPalLessonButton({ onPaid }: Props) {
+  const amount = LESSONS_PAYMENT_AMOUNT;
   const [open, setOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -71,7 +72,6 @@ export function PayPalLessonButton({ amount = "0.01", onPaid }: Props) {
                 const res = await fetch("/api/paypal/create-order", {
                   method: "POST",
                   headers: { "content-type": "application/json" },
-                  body: JSON.stringify({ amount }),
                 });
 
                 const data = await res.json();

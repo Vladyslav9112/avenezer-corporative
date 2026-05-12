@@ -1,4 +1,6 @@
-const BASE = process.env.PAYPAL_BASE_URL!;
+import { LESSONS_PAYMENT_CURRENCY } from "@/lib/paymentConfig";
+
+const BASE = process.env.PAYPAL_BASE_URL || "https://api-m.paypal.com";
 const CLIENT = process.env.PAYPAL_CLIENT_ID!;
 const SECRET = process.env.PAYPAL_CLIENT_SECRET!;
 
@@ -40,7 +42,7 @@ export async function paypalCreateOrder(amount: string) {
       intent: "CAPTURE",
       purchase_units: [
         {
-          amount: { currency_code: "CAD", value: amount },
+          amount: { currency_code: LESSONS_PAYMENT_CURRENCY, value: amount },
         },
       ],
     }),
