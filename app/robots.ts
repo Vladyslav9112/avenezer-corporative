@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
+import { locales } from "@/i18n";
 
 const FALLBACK_SITE_URL = "https://www.avenezer.ca";
-const locales = ["uk", "en", "fr"] as const;
 
 function getSiteUrl() {
   const envUrl = process.env.APP_URL?.trim();

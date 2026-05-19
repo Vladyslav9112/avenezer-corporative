@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
+import { defaultLocale, locales } from "@/i18n";
 
 const FALLBACK_SITE_URL = "https://www.avenezer.ca";
-const locales = ["uk", "en", "fr"] as const;
 const publicPaths = [
   "/",
   "/about",
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   const lastModified = new Date();
 
-  return publicPaths.flatMap((path) => {
+  return publicPaths.map((path) => {
     const languages = Object.fromEntries(
       locales.map((locale) => [
         locale,
@@ -50,12 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ]),
     );
 
-    return locales.map((locale) => ({
-      url: `${siteUrl}${getLocalizedPath(locale, path)}`,
+    return {
+      url: `${siteUrl}${getLocalizedPath(defaultLocale, path)}`,
       lastModified,
       alternates: {
         languages,
       },
-    }));
+    };
   });
 }
