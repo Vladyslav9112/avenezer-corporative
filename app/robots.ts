@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const FALLBACK_SITE_URL = "https://www.avenezer.ink";
+const FALLBACK_SITE_URL = "https://www.avenezer.ca";
 const locales = ["uk", "en", "fr"] as const;
 
 function getSiteUrl() {
