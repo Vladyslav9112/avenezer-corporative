@@ -1,7 +1,7 @@
 {
   "layout": {
     "title": "AvenEzer",
-    "description": "AvenEzer — міжнародна цифрова платформа."
+    "description": "AvenEzer — канадська компанія, що будує міжнародну цифрову платформу для бізнесів, партнерів Aver і спільнот."
   },
   "nav": {
     "home": "Головна",
@@ -16,8 +16,8 @@
   },
   "home": {
     "meta": {
-      "title": "AvenEzer — Головна",
-      "description": "AvenEzer — екосистема бізнесу, партнерства і підтримки."
+      "title": "AvenEzer Canada | міжнародна цифрова платформа для бізнесів",
+      "description": "AvenEzer — канадська компанія, що будує міжнародну цифрову платформу для бізнесів, партнерів Aver, nonprofit-організацій і спільнот."
     },
     "hero": {
       "eyebrow": "HOME / ГОЛОВНА",
@@ -102,8 +102,8 @@
   },
   "about": {
     "meta": {
-      "title": "AvenEzer — Про нас",
-      "description": "Про AvenEzer: місія, підхід до розвитку та принципи побудови міжнародної цифрової екосистеми."
+      "title": "Про AvenEzer Canada | цифрова бізнес-екосистема",
+      "description": "Дізнайтесь про AvenEzer Inc., місію компанії, модель партнерства Aver та розвиток міжнародної цифрової бізнес-екосистеми в Канаді."
     },
     "hero": {
       "eyebrow": "ABOUT / ПРО AvenEzer",
@@ -143,8 +143,8 @@
   },
   "faq": {
     "meta": {
-      "title": "AvenEzer — Часті питання",
-      "description": "Відповіді на часті питання про AvenEzer, Aver Program, AvenEzer app та Aver School."
+      "title": "AvenEzer FAQ | Aver Program, app і бізнес-платформа",
+      "description": "Відповіді на питання про AvenEzer, програму Aver, мобільний застосунок, підключення бізнесів, nonprofit та цифрову екосистему."
     },
     "hero": {
       "eyebrow": "FAQ / ПИТАННЯ ТА ВІДПОВІДІ",
@@ -391,8 +391,8 @@
   },
   "avers": {
     "meta": {
-      "title": "AvenEzer — Aver-и",
-      "description": "Хто такі Aver-и, як вони допомагають розвивати екосистему AvenEzer та яку роль відіграють у підключенні бізнесів."
+      "title": "Aver Program | партнери AvenEzer і бізнес-мережа",
+      "description": "Хто такі Aver-и, як працює партнерська програма AvenEzer і як партнери допомагають бізнесам підключатися до платформи."
     },
     "hero": {
       "eyebrow": "AVERS / АВЕРИ",
@@ -452,8 +452,8 @@
   },
   "connectia": {
     "meta": {
-      "title": "AvenEzer — Connectia Business Club",
-      "description": "Connectia Business Club — бізнес-спільнота в межах екосистеми AvenEzer для професійного спілкування та побудови ділових зв’язків."
+      "title": "Connectia Business Club | бізнес-спільнота AvenEzer",
+      "description": "Connectia Business Club — бізнес-спільнота AvenEzer для нетворкінгу, обміну досвідом і розвитку ділових зв’язків."
     },
     "hero": {
       "eyebrow": "CONNECTIA BUSINESS CLUB",
@@ -489,8 +489,8 @@
       }
     },
     "meta": {
-      "title": "AvenEzer — Контакти",
-      "description": "Контактна інформація AvenEzer для загальних питань та партнерських запитів."
+      "title": "Контакти AvenEzer Canada | партнерські та бізнес-запити",
+      "description": "Зв’яжіться з AvenEzer Inc. у Канаді щодо партнерства, бізнес-запитів і питань про цифрову платформу."
     },
     "hero": {
       "eyebrow": "CONTACT / КОНТАКТИ",
@@ -513,8 +513,8 @@
   },
   "platform": {
     "meta": {
-      "title": "AvenEzer — MVP платформа",
-      "description": "Опис MVP веб-платформи AvenEzer: що доступно зараз, як користуватися і як платформа розвиватиметься далі."
+      "title": "MVP платформа AvenEzer | цифровий каталог і бізнес-екосистема",
+      "description": "Ознайомтеся з MVP веб-платформою AvenEzer — цифровою бізнес-екосистемою та каталогом для бізнесів, партнерів і користувачів."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP ПЛАТФОРМА",

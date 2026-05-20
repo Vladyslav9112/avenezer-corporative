@@ -1,7 +1,7 @@
 {
   "layout": {
     "title": "AvenEzer",
-    "description": "AvenEzer is an international digital platform."
+    "description": "AvenEzer is a Canadian company building an international digital platform for businesses, Aver partners, and communities."
   },
   "nav": {
     "home": "Home",
@@ -16,8 +16,8 @@
   },
   "home": {
     "meta": {
-      "title": "AvenEzer — Home",
-      "description": "AvenEzer is an international digital platform for businesses, Avers and communities."
+      "title": "AvenEzer Canada | International Digital Business Platform",
+      "description": "AvenEzer is a Canadian company building an international digital platform for businesses, Aver partners, nonprofits, and communities."
     },
     "hero": {
       "eyebrow": "HOME",
@@ -102,8 +102,8 @@
   },
   "about": {
     "meta": {
-      "title": "AvenEzer — About",
-      "description": "About AvenEzer: mission, development approach, and the principles behind building an international digital ecosystem."
+      "title": "About AvenEzer Canada | International Business Ecosystem",
+      "description": "Learn about AvenEzer Inc., its mission, Aver partner model, and the development of an international digital business ecosystem in Canada."
     },
     "hero": {
       "eyebrow": "ABOUT",
@@ -143,8 +143,8 @@
   },
   "faq": {
     "meta": {
-      "title": "AvenEzer — FAQ",
-      "description": "Answers to common questions about AvenEzer, the Aver Program, the AvenEzer app, and Aver School."
+      "title": "AvenEzer FAQ | Aver Program, App and Business Platform",
+      "description": "Answers about AvenEzer, the Aver Program, the mobile app, business onboarding, nonprofits, and the digital platform ecosystem."
     },
     "hero": {
       "eyebrow": "FAQ",
@@ -391,8 +391,8 @@
   },
   "avers": {
     "meta": {
-      "title": "AvenEzer — Avers",
-      "description": "Who Avers are, how they contribute to the AvenEzer ecosystem, and their role in connecting businesses to the platform."
+      "title": "Aver Program | AvenEzer Partners and Business Network",
+      "description": "Learn who Avers are, how the AvenEzer partner program works, and how partners help connect businesses to the platform."
     },
     "hero": {
       "eyebrow": "AVERS",
@@ -452,8 +452,8 @@
   },
   "connectia": {
     "meta": {
-      "title": "AvenEzer — Connectia Business Club",
-      "description": "Connectia Business Club is a business community within the AvenEzer ecosystem for professional networking and building business relationships."
+      "title": "Connectia Business Club | AvenEzer Business Community",
+      "description": "Explore Connectia Business Club, the AvenEzer business community for networking, knowledge exchange, and professional relationships."
     },
     "hero": {
       "eyebrow": "CONNECTIA BUSINESS CLUB",
@@ -489,8 +489,8 @@
       }
     },
     "meta": {
-      "title": "AvenEzer — Contact",
-      "description": "AvenEzer contact information for general inquiries and partnership requests."
+      "title": "Contact AvenEzer Canada | Partnership and Business Inquiries",
+      "description": "Contact AvenEzer Inc. in Canada for partnership requests, business inquiries, and questions about the digital platform."
     },
     "hero": {
       "eyebrow": "CONTACT",
@@ -513,8 +513,8 @@
   },
   "platform": {
     "meta": {
-      "title": "AvenEzer — MVP platform",
-      "description": "Overview of the AvenEzer MVP web platform: what is available now, how to use it, and how the platform will evolve."
+      "title": "AvenEzer MVP Platform | Digital Business Directory and Ecosystem",
+      "description": "Explore the AvenEzer MVP web platform, a digital business ecosystem and directory designed for businesses, partners, and users."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP",

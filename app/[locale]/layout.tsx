@@ -11,6 +11,7 @@ import { locales } from "@/i18n";
 import GlobalAnimatedBackground from "@/components/animation/GlobalAnimatedBackground";
 import PageTransition from "@/components/animation/PageTransition";
 import {
+  getAbsoluteUrl,
   getMetadataBase,
   getPageKeywords,
   siteConfig,
@@ -41,9 +42,34 @@ export const metadata: Metadata = {
   description: siteConfig.description.en,
   keywords: getPageKeywords(siteConfig.defaultLocale, "/"),
   applicationName: siteConfig.name,
+  icons: {
+    icon: siteConfig.iconPath,
+    shortcut: siteConfig.iconPath,
+    apple: siteConfig.iconPath,
+  },
   referrer: "origin-when-cross-origin",
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description.en,
+    images: [
+      {
+        url: getAbsoluteUrl(siteConfig.ogImagePath),
+        width: 1200,
+        height: 630,
+        alt: siteConfig.ogImageAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description.en,
+    images: [getAbsoluteUrl(siteConfig.ogImagePath)],
+  },
 
   alternates: {
     canonical: "/",
@@ -51,7 +77,7 @@ export const metadata: Metadata = {
       en: "/en",
       uk: "/uk",
       fr: "/fr",
-      "x-default": "/en",
+      "x-default": "/uk",
     },
   },
 

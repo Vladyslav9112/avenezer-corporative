@@ -49,7 +49,7 @@ export function buildPageMetadata({
     ? undefined
     : keywords ?? getPageKeywords(locale, pathname);
   const socialImage = {
-    url: getAbsoluteUrl("/platform-hero.jpg"),
+    url: getAbsoluteUrl(siteConfig.ogImagePath),
     width: 1200,
     height: 630,
     alt: siteConfig.ogImageAlt,
@@ -127,7 +127,7 @@ export function buildOrganizationSchema() {
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     url,
-    logo: getAbsoluteUrl("/logo.webp"),
+    logo: getAbsoluteUrl(siteConfig.iconPath),
     description: siteConfig.description.en,
     email: siteConfig.email,
     telephone: siteConfig.phone,
@@ -157,5 +157,22 @@ export function buildOrganizationSchema() {
         value: siteConfig.corporationNumber,
       },
     ],
+  };
+}
+
+export function buildWebSiteSchema(locale: AppLocale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    alternateName: siteConfig.legalName,
+    url: getAbsoluteLocaleUrl(locale, "/"),
+    description: siteConfig.description[locale],
+    inLanguage: getHrefLang(locale),
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: getAbsoluteLocaleUrl(siteConfig.defaultLocale, "/"),
+    },
   };
 }

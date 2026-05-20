@@ -7,7 +7,11 @@ import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 import Reveal from "@/components/animation/Reveal";
-import { buildOrganizationSchema, buildPageMetadata } from "@/lib/seo";
+import {
+  buildOrganizationSchema,
+  buildPageMetadata,
+  buildWebSiteSchema,
+} from "@/lib/seo";
 import type { AppLocale } from "@/lib/site";
 
 import {
@@ -91,6 +95,7 @@ export default async function Home({
   return (
     <>
       <JsonLd data={buildOrganizationSchema()} />
+      <JsonLd data={buildWebSiteSchema(locale as AppLocale)} />
 
       <Reveal variant="block">
         <PageHero

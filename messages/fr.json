@@ -1,7 +1,7 @@
 {
   "layout": {
     "title": "AvenEzer",
-    "description": "AvenEzer est une plateforme numérique internationale."
+    "description": "AvenEzer est une entreprise canadienne qui construit une plateforme numérique internationale pour les entreprises, les partenaires Aver et les communautés."
   },
   "nav": {
     "home": "Accueil",
@@ -16,8 +16,8 @@
   },
   "home": {
     "meta": {
-      "title": "AvenEzer — Accueil",
-      "description": "AvenEzer est une plateforme numérique internationale pour les entreprises, les Avers et les communautés."
+      "title": "AvenEzer Canada | plateforme numérique internationale pour entreprises",
+      "description": "AvenEzer est une entreprise canadienne qui construit une plateforme numérique internationale pour les entreprises, les partenaires Aver, les organisations à but non lucratif et les communautés."
     },
     "hero": {
       "eyebrow": "ACCUEIL",
@@ -102,8 +102,8 @@
   },
   "about": {
     "meta": {
-      "title": "AvenEzer — À propos",
-      "description": "À propos d’AvenEzer : mission, approche de développement et principes de construction d’un écosystème numérique international."
+      "title": "À propos d’AvenEzer Canada | écosystème numérique d’affaires",
+      "description": "Découvrez AvenEzer Inc., sa mission, le modèle de partenariat Aver et le développement d’un écosystème numérique d’affaires international au Canada."
     },
     "hero": {
       "eyebrow": "À PROPOS",
@@ -143,8 +143,8 @@
   },
   "faq": {
     "meta": {
-      "title": "AvenEzer — FAQ",
-      "description": "Réponses aux questions fréquentes sur AvenEzer, le programme Aver, l’application AvenEzer et Aver School."
+      "title": "FAQ AvenEzer | programme Aver, application et plateforme",
+      "description": "Réponses aux questions sur AvenEzer, le programme Aver, l’application mobile, l’intégration des entreprises, les organismes à but non lucratif et l’écosystème numérique."
     },
     "hero": {
       "eyebrow": "FAQ",
@@ -391,8 +391,8 @@
   },
   "avers": {
     "meta": {
-      "title": "AvenEzer — Avers",
-      "description": "Qui sont les Avers, comment ils contribuent à l’écosystème AvenEzer et leur rôle dans l’intégration des entreprises."
+      "title": "Programme Aver | partenaires AvenEzer et réseau d’affaires",
+      "description": "Découvrez qui sont les Avers, comment fonctionne le programme partenaire AvenEzer et comment ils connectent les entreprises à la plateforme."
     },
     "hero": {
       "eyebrow": "AVERS",
@@ -452,8 +452,8 @@
   },
   "connectia": {
     "meta": {
-      "title": "AvenEzer — Connectia Business Club",
-      "description": "Connectia Business Club est une communauté d’affaires au sein de l’écosystème AvenEzer, dédiée aux échanges professionnels et au développement de relations d’affaires."
+      "title": "Connectia Business Club | communauté d’affaires AvenEzer",
+      "description": "Découvrez Connectia Business Club, la communauté d’affaires AvenEzer dédiée au réseautage, aux échanges et aux relations professionnelles."
     },
     "hero": {
       "eyebrow": "CONNECTIA BUSINESS CLUB",
@@ -489,8 +489,8 @@
       }
     },
     "meta": {
-      "title": "AvenEzer — Contact",
-      "description": "Informations de contact d’AvenEzer pour les demandes générales et les partenariats."
+      "title": "Contact AvenEzer Canada | partenariats et demandes d’affaires",
+      "description": "Contactez AvenEzer Inc. au Canada pour les partenariats, les demandes d’affaires et les questions sur la plateforme numérique."
     },
     "hero": {
       "eyebrow": "CONTACT",
@@ -513,8 +513,8 @@
   },
   "platform": {
     "meta": {
-      "title": "AvenEzer — Plateforme MVP",
-      "description": "Présentation de la plateforme web MVP d’AvenEzer : ce qui est disponible aujourd’hui, comment l’utiliser et comment la plateforme va évoluer."
+      "title": "Plateforme MVP AvenEzer | annuaire numérique et écosystème d’affaires",
+      "description": "Découvrez la plateforme web MVP d’AvenEzer, un écosystème et un annuaire numérique pour entreprises, partenaires et utilisateurs."
     },
     "hero": {
       "eyebrow": "PLATFORM / MVP",
