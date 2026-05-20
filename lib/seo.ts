@@ -7,6 +7,7 @@ import {
   getMetadataBase,
   getOtherOpenGraphLocales,
   getOpenGraphLocale,
+  getPageKeywords,
   siteConfig,
 } from "@/lib/site";
 
@@ -18,6 +19,7 @@ type BuildPageMetadataOptions = {
   canonicalLocale?: AppLocale;
   includeAlternates?: boolean;
   noIndex?: boolean;
+  keywords?: string[];
 };
 
 function buildLanguageAlternates(pathname: string) {
@@ -40,8 +42,12 @@ export function buildPageMetadata({
   canonicalLocale = locale,
   includeAlternates = true,
   noIndex = false,
+  keywords,
 }: BuildPageMetadataOptions): Metadata {
   const canonicalUrl = getAbsoluteLocaleUrl(canonicalLocale, pathname);
+  const metadataKeywords = noIndex
+    ? undefined
+    : keywords ?? getPageKeywords(locale, pathname);
   const socialImage = {
     url: getAbsoluteUrl("/platform-hero.jpg"),
     width: 1200,
@@ -53,6 +59,7 @@ export function buildPageMetadata({
     metadataBase: getMetadataBase(),
     title,
     description,
+    keywords: metadataKeywords,
     alternates: {
       canonical: canonicalUrl,
       languages: includeAlternates ? buildLanguageAlternates(pathname) : undefined,

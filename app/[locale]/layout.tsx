@@ -10,7 +10,12 @@ import { RoutePhoto } from "@/components/layout/RoutePhoto";
 import { locales } from "@/i18n";
 import GlobalAnimatedBackground from "@/components/animation/GlobalAnimatedBackground";
 import PageTransition from "@/components/animation/PageTransition";
-import { getMetadataBase, siteConfig, type AppLocale } from "@/lib/site";
+import {
+  getMetadataBase,
+  getPageKeywords,
+  siteConfig,
+  type AppLocale,
+} from "@/lib/site";
 
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
@@ -34,6 +39,7 @@ export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: siteConfig.name,
   description: siteConfig.description.en,
+  keywords: getPageKeywords(siteConfig.defaultLocale, "/"),
   applicationName: siteConfig.name,
   referrer: "origin-when-cross-origin",
   creator: siteConfig.legalName,
