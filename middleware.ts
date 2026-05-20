@@ -17,7 +17,7 @@ export default function middleware(req: NextRequest) {
     const locale = m1[1];
     const url = req.nextUrl.clone();
     url.pathname = `/${locale}/auth/login`;
-    return NextResponse.redirect(url);
+    return NextResponse.redirect(url, { status: 308 });
   }
 
   // /uk/register -> /uk/auth/register
@@ -26,10 +26,31 @@ export default function middleware(req: NextRequest) {
     const locale = m2[1];
     const url = req.nextUrl.clone();
     url.pathname = `/${locale}/auth/register`;
-    return NextResponse.redirect(url);
+    return NextResponse.redirect(url, { status: 308 });
   }
 
-  return intlMiddleware(req);
+  const response = intlMiddleware(req);
+
+  // Strengthen the homepage locale redirect for crawlers and canonicalization.
+  if (pathname === "/" && response.status === 307) {
+    const location = response.headers.get("location");
+
+    if (location) {
+      const redirect = NextResponse.redirect(new URL(location, req.url), {
+        status: 308,
+      });
+
+      response.headers.forEach((value, key) => {
+        if (key.toLowerCase() !== "location") {
+          redirect.headers.set(key, value);
+        }
+      });
+
+      return redirect;
+    }
+  }
+
+  return response;
 }
 
 export const config = {
