@@ -247,7 +247,7 @@ export const siteConfig = {
   foundingDate: "2025-09-15",
   corporationNumber: "1731845-6",
   naics: "519130",
-  ogImagePath: "/platform-hero.jpg",
+  ogImagePath: "/og-cover.png",
   iconPath: "/logo.webp",
   themeColor: "#2A5D59",
   backgroundColor: "#f2e8e1",
