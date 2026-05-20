@@ -10,6 +10,7 @@ import { RoutePhoto } from "@/components/layout/RoutePhoto";
 import { locales } from "@/i18n";
 import GlobalAnimatedBackground from "@/components/animation/GlobalAnimatedBackground";
 import PageTransition from "@/components/animation/PageTransition";
+import { getMetadataBase, siteConfig, type AppLocale } from "@/lib/site";
 
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
@@ -23,9 +24,33 @@ const bodyFont = Manrope({
   weight: ["300", "400", "500", "600"],
 });
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 export const metadata: Metadata = {
-  title: "AvenEzer",
-  description: "AvenEzer — international digital platform.",
+  metadataBase: getMetadataBase(),
+  title: siteConfig.name,
+  description: siteConfig.description.en,
+  applicationName: siteConfig.name,
+  referrer: "origin-when-cross-origin",
+  creator: siteConfig.legalName,
+  publisher: siteConfig.legalName,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? {
+        google: process.env.GOOGLE_SITE_VERIFICATION,
+      }
+    : undefined,
 };
 
 export default async function RootLayout({
@@ -33,11 +58,11 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // ✅ params як Promise
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params; // ✅ await
+  const { locale } = await params;
 
-  if (!locales.includes(locale as any)) notFound();
+  if (!locales.includes(locale as AppLocale)) notFound();
 
   let messages;
   try {

@@ -1,7 +1,27 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
 import { getLessonsByLocale } from "@/content/lessons";
+import { buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/lessons",
+    title: "Lessons",
+    description: "Private lesson area for AvenEzer partners.",
+    includeAlternates: false,
+    noIndex: true,
+  });
+}
 
 export default async function LessonsPage({
   params,

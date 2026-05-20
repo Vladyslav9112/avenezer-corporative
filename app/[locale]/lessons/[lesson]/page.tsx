@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -6,6 +7,25 @@ import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
 import { getLessonsByLocale } from "@/content/lessons";
 import CompleteLessonButton from "../ui/CompleteLessonButton";
 import Reveal from "@/components/animation/Reveal";
+import { buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; lesson: string }>;
+}): Promise<Metadata> {
+  const { locale, lesson } = await params;
+
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: `/lessons/${lesson}`,
+    title: `Lesson ${lesson}`,
+    description: "Private lesson page for AvenEzer partners.",
+    includeAlternates: false,
+    noIndex: true,
+  });
+}
 
 export default async function LessonPage({
   params,

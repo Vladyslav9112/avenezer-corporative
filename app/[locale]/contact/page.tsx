@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
@@ -9,6 +10,8 @@ import { ContactForm } from "./ContactForm";
 import Reveal from "@/components/animation/Reveal";
 
 import { Mail, MessageSquare } from "lucide-react";
+import { buildBreadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -22,10 +25,12 @@ export async function generateMetadata({
     namespace: "contact",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/contact",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function ContactPage({
@@ -39,11 +44,22 @@ export default async function ContactPage({
     locale,
     namespace: "contact",
   });
+  const tNav = await getTranslations({
+    locale,
+    namespace: "nav",
+  });
 
   const contactBullets = t.raw("sections.details.bullets") as string[];
 
   return (
     <>
+      <JsonLd
+        data={buildBreadcrumbSchema(locale as AppLocale, [
+          { name: tNav("home"), path: "/" },
+          { name: t("hero.title"), path: "/contact" },
+        ])}
+      />
+
       <Reveal variant="block">
         <PageHero
           eyebrow={t("hero.eyebrow")}

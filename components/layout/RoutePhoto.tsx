@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "@/navigation";
 import { Container } from "@/components/ui/Container";
 import { locales } from "@/i18n";
@@ -97,11 +98,13 @@ export function RoutePhoto() {
     <section aria-hidden="true" className="pt-5 sm:pt-7">
       <Container>
         <div className="relative h-44 overflow-hidden rounded-2xl border border-black/10 shadow-[0_10px_22px_rgba(0,0,0,0.12)] sm:h-60">
-          <img
+          <Image
             src={photo.src}
-            alt={photo.alt}
-            loading="lazy"
-            className="h-full w-full object-cover opacity-80"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 640px) 100vw, 1200px"
+            className="object-cover opacity-80"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[color:rgba(42,93,89,0.45)] via-transparent to-[color:rgba(79,140,131,0.35)]" />
         </div>

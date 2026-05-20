@@ -215,7 +215,7 @@ ${message}
     });
 
     return NextResponse.json({ ok: true });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { ok: false, error: "Failed to send message." },
       { status: 500 },

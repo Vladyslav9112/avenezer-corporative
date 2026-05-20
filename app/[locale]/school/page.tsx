@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { prisma } from "@/lib/prisma";
 import { getUserFromCookie } from "@/lib/auth/getUserFromCookie";
 import SchoolGate from "./ui/SchoolGate";
 import Reveal from "@/components/animation/Reveal";
+import { buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/school",
+    title: "AvenEzer School",
+    description: "Private learning area for AvenEzer partners.",
+    includeAlternates: false,
+    noIndex: true,
+  });
+}
 
 export default async function SchoolPage({
   params,
@@ -39,10 +60,12 @@ export default async function SchoolPage({
           </h1>
 
           <div className="mt-4 overflow-hidden rounded-2xl border border-black/10">
-            <img
+            <Image
               src="/platform-hero.jpg"
               alt="AvenEzer School learning environment"
-              loading="lazy"
+              width={1600}
+              height={900}
+              sizes="(max-width: 640px) 100vw, 768px"
               className="h-52 w-full object-cover sm:h-72"
             />
           </div>
@@ -99,7 +122,7 @@ export default async function SchoolPage({
             <div className="mt-6 text-sm text-[var(--text-muted)]">
               <Link
                 className="underline"
-                href={`/${locale}/terms`}
+                href="/en/terms"
                 target="_blank"
               >
                 Terms
@@ -107,7 +130,7 @@ export default async function SchoolPage({
               ·{" "}
               <Link
                 className="underline"
-                href={`/${locale}/legal`}
+                href="/en/legal"
                 target="_blank"
               >
                 Legal

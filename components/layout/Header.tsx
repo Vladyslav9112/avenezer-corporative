@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
+import { useMemo, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLocale, useTranslations } from "next-intl";
@@ -16,11 +17,8 @@ export function Header() {
   const locale = useLocale();
   const t = useTranslations("nav");
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+  const [menuPathname, setMenuPathname] = useState<string | null>(null);
+  const isOpen = menuPathname === pathname;
 
   const nav = useMemo<NavItem[]>(
     () => [
@@ -50,7 +48,14 @@ export function Header() {
             locale={locale}
             className="text-lg font-[var(--font-display)] uppercase tracking-[0.2em] text-[var(--text-invert)]"
           >
-            <img src="/logo.webp" alt="Logo" className="h-14 w-[92px]" />
+            <Image
+              src="/logo.webp"
+              alt="AvenEzer logo"
+              width={92}
+              height={56}
+              priority
+              className="h-14 w-[92px]"
+            />
           </Link>
 
           {/* DESKTOP NAV */}
@@ -83,7 +88,11 @@ export function Header() {
               type="button"
               aria-expanded={isOpen}
               aria-controls="mobile-nav"
-              onClick={() => setIsOpen((v) => !v)}
+              onClick={() =>
+                setMenuPathname((current) =>
+                  current === pathname ? null : pathname,
+                )
+              }
               className="inline-flex items-center gap-2 rounded-full border border-[color:rgba(242,232,225,0.5)] px-4 py-2 text-xs uppercase tracking-[0.3em] text-[var(--text-invert)]"
             >
               {t("menu")}

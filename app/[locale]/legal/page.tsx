@@ -1,12 +1,27 @@
 // app/legal/page.tsx
 import { Section } from "@/components/ui/Section";
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Legal Policies – AvenEzer Inc.",
-  description:
-    "Legal Policies – AvenEzer Inc. (Enterprise-Grade Version – Corporate Website).",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/legal",
+    title: "Legal Policies - AvenEzer Inc.",
+    description:
+      "Legal Policies - AvenEzer Inc. (Enterprise-Grade Version - Corporate Website).",
+    canonicalLocale: "en",
+    includeAlternates: false,
+    noIndex: locale !== "en",
+  });
+}
 
 export default function LegalPoliciesPage() {
   return (

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
 import { Bullets } from "@/components/ui/Bullets";
 import Reveal from "@/components/animation/Reveal";
+import { buildOrganizationSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 import {
   LayoutDashboard,
@@ -28,10 +31,12 @@ export async function generateMetadata({
     namespace: "home",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function Home({
@@ -85,6 +90,8 @@ export default async function Home({
 
   return (
     <>
+      <JsonLd data={buildOrganizationSchema()} />
+
       <Reveal variant="block">
         <PageHero
           eyebrow={t("hero.eyebrow")}

@@ -1,27 +1,5 @@
 import type { MetadataRoute } from "next";
-import { locales } from "@/i18n";
-
-const FALLBACK_SITE_URL = "https://www.avenezer.ca";
-
-function getSiteUrl() {
-  const envUrl = process.env.APP_URL?.trim();
-
-  if (!envUrl) {
-    return FALLBACK_SITE_URL;
-  }
-
-  try {
-    const url = new URL(envUrl);
-
-    if (url.hostname === "localhost" || url.hostname === "127.0.0.1") {
-      return FALLBACK_SITE_URL;
-    }
-
-    return url.origin;
-  } catch {
-    return FALLBACK_SITE_URL;
-  }
-}
+import { locales, getSiteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   const siteUrl = getSiteUrl();

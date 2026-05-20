@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
 
@@ -105,10 +106,12 @@ export function Section({ id, title, subtitle, children }: SectionProps) {
 
           {photo ? (
             <div className="mb-6 overflow-hidden rounded-xl border border-black/10">
-              <img
+              <Image
                 src={photo.src}
                 alt={photo.alt}
-                loading="lazy"
+                width={1600}
+                height={900}
+                sizes="(max-width: 640px) 100vw, 960px"
                 className="h-48 w-full object-cover sm:h-64"
               />
             </div>

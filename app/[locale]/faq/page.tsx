@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import type { ComponentType } from "react";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import Reveal from "@/components/animation/Reveal";
@@ -14,6 +15,8 @@ import {
   Users,
   GraduationCap,
 } from "lucide-react";
+import { buildBreadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 type FaqItem = {
   q: string;
@@ -58,10 +61,12 @@ export async function generateMetadata({
     namespace: "faq",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/faq",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function FaqPage({
@@ -74,6 +79,10 @@ export default async function FaqPage({
   const t = await getTranslations({
     locale,
     namespace: "faq",
+  });
+  const tNav = await getTranslations({
+    locale,
+    namespace: "nav",
   });
 
   const sectionKeys: FaqSectionKey[] = [
@@ -92,6 +101,13 @@ export default async function FaqPage({
 
   return (
     <>
+      <JsonLd
+        data={buildBreadcrumbSchema(locale as AppLocale, [
+          { name: tNav("home"), path: "/" },
+          { name: t("hero.title"), path: "/faq" },
+        ])}
+      />
+
       <Reveal variant="block">
         <PageHero
           eyebrow={t("hero.eyebrow")}

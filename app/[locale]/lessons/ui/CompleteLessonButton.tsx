@@ -53,8 +53,8 @@ export default function CompleteLessonButton(props: {
       }
 
       router.push(`/${locale}/lessons/${data.nextLesson ?? lessonNumber + 1}`);
-    } catch (err: any) {
-      setError(err?.message ?? t("errors.completeFailed"));
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : t("errors.completeFailed"));
       setLoading(false);
     }
   }

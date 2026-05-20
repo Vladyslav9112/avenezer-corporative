@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
@@ -8,6 +9,8 @@ import { Bullets } from "@/components/ui/Bullets";
 import Reveal from "@/components/animation/Reveal";
 
 import { UsersRound } from "lucide-react";
+import { buildBreadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -21,10 +24,12 @@ export async function generateMetadata({
     namespace: "connectia",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/connectia",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function ConnectiaPage({
@@ -38,11 +43,22 @@ export default async function ConnectiaPage({
     locale,
     namespace: "connectia",
   });
+  const tNav = await getTranslations({
+    locale,
+    namespace: "nav",
+  });
 
   const partParagraphs = t.raw("sections.part.paragraphs") as string[];
 
   return (
     <>
+      <JsonLd
+        data={buildBreadcrumbSchema(locale as AppLocale, [
+          { name: tNav("home"), path: "/" },
+          { name: t("hero.title"), path: "/connectia" },
+        ])}
+      />
+
       <Reveal variant="block">
         <PageHero
           eyebrow={t("hero.eyebrow")}

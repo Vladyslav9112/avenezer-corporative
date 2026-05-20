@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import crypto from "crypto";
 import { prisma } from "@/lib/prisma";
 import { mailer, getFromEmail } from "@/lib/mail";
+import { getSiteUrl } from "@/lib/site";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -45,8 +46,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const appUrl = process.env.APP_URL || "http://localhost:3000";
-    const resetLink = `${appUrl}/en/auth/reset-password?token=${rawToken}`;
+    const resetLink = `${getSiteUrl()}/en/auth/reset-password?token=${rawToken}`;
 
     const subject = "Reset your password";
     const text =

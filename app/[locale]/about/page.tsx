@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
@@ -9,6 +10,8 @@ import { Bullets } from "@/components/ui/Bullets";
 import Reveal from "@/components/animation/Reveal";
 
 import { Building2, Target, Layers3 } from "lucide-react";
+import { buildBreadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -22,10 +25,12 @@ export async function generateMetadata({
     namespace: "about",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/about",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function AboutPage({
@@ -39,6 +44,10 @@ export default async function AboutPage({
     locale,
     namespace: "about",
   });
+  const tNav = await getTranslations({
+    locale,
+    namespace: "nav",
+  });
 
   const aboutCompanyParagraphs = t.raw(
     "sections.aboutCompany.paragraphs",
@@ -49,6 +58,13 @@ export default async function AboutPage({
 
   return (
     <>
+      <JsonLd
+        data={buildBreadcrumbSchema(locale as AppLocale, [
+          { name: tNav("home"), path: "/" },
+          { name: t("hero.title"), path: "/about" },
+        ])}
+      />
+
       <Reveal variant="block">
         <PageHero
           eyebrow={t("hero.eyebrow")}

@@ -54,7 +54,7 @@ export default function GlobalAnimatedBackground() {
         }}
       />
 
-      {/* global glow */}
+      {/* ambient glow */}
       <motion.div
         className="
           absolute inset-0

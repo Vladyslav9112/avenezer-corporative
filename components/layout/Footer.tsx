@@ -41,19 +41,19 @@ export function Footer() {
               {t("faq")}
             </LocalizedLink>
 
-            <LocalizedLink
-              href="/terms"
+            <Link
+              href="/en/terms"
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
               {t("terms")}
-            </LocalizedLink>
+            </Link>
 
-            <LocalizedLink
-              href="/legal"
+            <Link
+              href="/en/legal"
               className="text-[var(--text-invert)] underline-offset-4 transition hover:underline"
             >
               {t("legal")}
-            </LocalizedLink>
+            </Link>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { InfoBlock } from "@/components/ui/InfoBlock";
@@ -9,6 +10,8 @@ import { Bullets } from "@/components/ui/Bullets";
 // lucide icons
 import { Users, BadgeCheck, GraduationCap, ShieldCheck } from "lucide-react";
 import { TitleButton } from "@/components/ui/TitleButton";
+import { buildBreadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import type { AppLocale } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -22,10 +25,12 @@ export async function generateMetadata({
     namespace: "avers",
   });
 
-  return {
+  return buildPageMetadata({
+    locale: locale as AppLocale,
+    pathname: "/avers",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function AversPage({
@@ -39,6 +44,10 @@ export default async function AversPage({
     locale,
     namespace: "avers",
   });
+  const tNav = await getTranslations({
+    locale,
+    namespace: "nav",
+  });
 
   const whoParagraphs = t.raw("sections.who.paragraphs") as string[];
 
@@ -51,6 +60,13 @@ export default async function AversPage({
 
   return (
     <>
+      <JsonLd
+        data={buildBreadcrumbSchema(locale as AppLocale, [
+          { name: tNav("home"), path: "/" },
+          { name: t("hero.title"), path: "/avers" },
+        ])}
+      />
+
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
