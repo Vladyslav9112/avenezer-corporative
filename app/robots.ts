@@ -3,9 +3,9 @@ import { locales, getSiteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   const siteUrl = getSiteUrl();
+
   const disallow = [
     "/api/",
-    "/_next/",
     ...locales.flatMap((locale) => [
       `/${locale}/auth/`,
       `/${locale}/lessons/`,
