@@ -12,8 +12,15 @@ const nextConfig: NextConfig = {
         destination: "https://www.avenezer.ca/:path*",
         permanent: true,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "http://avenezer.ca" }],
+        destination: "https://www.avenezer.ca/:path*",
+        permanent: true,
+      },
     ];
   },
+
   images: {
     remotePatterns: [
       {

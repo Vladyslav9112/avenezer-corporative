@@ -44,6 +44,17 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
+
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+      uk: "/uk",
+      fr: "/fr",
+      "x-default": "/en",
+    },
+  },
+
   robots: {
     index: true,
     follow: true,
