@@ -3,7 +3,7 @@ import { defaultLocale, locales } from "@/i18n";
 export type AppLocale = (typeof locales)[number];
 export { defaultLocale, locales };
 
-const FALLBACK_SITE_URL = "https://www.avenezer.ink";
+const FALLBACK_SITE_URL = "https://www.avenezer.ca";
 
 const localeHrefLangMap: Record<AppLocale, string> = {
   uk: "uk",
